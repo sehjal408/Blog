@@ -163,14 +163,6 @@ It helps you to effectively manage administration and allows you to focus on wha
 
 <br>
 
-<!----------------------------------------------------------------------------------------------------------------------------->
-**Date : 21-Feb-2022** 
-<h3 align='center'>Mysql Administration, Converting pdf to md file</h3>
-- Today I created a new doctype in erpnext with different options
-- then learned about the administration concept of database
-- Converting pdf file to md and applying changes using markdown.
-
-<br>
 
 <!----------------------------------------------------------------------------------------------------------------------------->
 **Date : 22-Feb-2022** 
@@ -209,41 +201,6 @@ It helps you to effectively manage administration and allows you to focus on wha
 <h3 align='center'>Creating Web page in ErpNext</h3>
 - Creating Static Webpage on Erpnext.
 - Learning Frappe School Module.
-
-<br>
-
-<!----------------------------------------------------------------------------------------------------------------------------->
-**Date : 2-Mar-2022** 
-<h3 align='center'>Learn Module from Frappe School</h3>
-- Creating new site with new app.
-- Creating Doctype and linking doctype with other.
-- Learn Jinja Script for frappe doctypes. 
-
-<br>
-
-<!----------------------------------------------------------------------------------------------------------------------------->
-**Date : 4-Mar-2022** 
-<h3 align='center'>Presentation and discussion of meeting app</h3>
-- Telling about the importance of doctype in Frappe-Framework.
-- Discuss with all team how it works and how we create new custom app.
-
-<br>
-
-<!----------------------------------------------------------------------------------------------------------------------------->
-**Date : 5-Mar-2022** 
-<h3 align='center'>Creating own Noticeboard app</h3>
-- First create App and install it on website.
-- Create Doctype according to structure discussed in team.
-- Provide it web view.
-
-<br>
-
-<!----------------------------------------------------------------------------------------------------------------------------->
-**Date : 7-Mar-2022** 
-<h3 align='center'>Customize Noticeboard app</h3>
-- Writing code to show correct date format eg. March 7, 2022.
-- Writing code to show the name of user who upload the notice.
-- Making its view user friendly in form and webpage both.
 
 <br>
 
