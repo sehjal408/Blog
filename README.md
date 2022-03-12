@@ -84,29 +84,20 @@
 
 <!----------------------------------------------------------------------------------------------------------------------------->
 **Date : 9-Feb-2022** 
-<h3 align='center'>Introduction to Reveal.JS, Pandoc, Use of Markdown in Reveal.js</h3>
+<h3 align='center'>Library Management System application in frappe</h3>
 
-- What is Reveal.JS, Pandoc, Use Markdown in Reveal.js.
-- Creating Presentation in Reveal.JS using Markdown only.
-- Learn how to show presentation on Local machine.
-- Converting .md file into .pdf file using Pandoc.
+- Created LMS app in frappe
 <br>
 
 <!----------------------------------------------------------------------------------------------------------------------------->
 **Date : 10-Feb-2022** 
 <h3 align='center'>Introduction to Docker, Virtual Machine and ERPNext</h3>
 
-**What is Docker?**
-<p align="justify">Docker is popular virtualization software that helps its users in developing, deploying, monitoring, and running applications in a Docker Container with all their dependencies (frameworks, libraries, etc.) to run an application in an efficient and bug-free manner.Docker Containers are Light-weight, Applications run in isolation,Occupies less space, Easily portable and highly secure, Short boot-up
-time.</p>
-- It can run multiple containers on a system.
-- It can start multiple containers at a time on the Docker engine.
+**What is Doctype?**
+
 <br>
 
-**What is Virtual Machine?**
-<p align="justify">A Virtual Machine (VM) is a compute resource that uses software instead of a physical computer to run programs and deploy apps. One or more virtual “guest” machines run on a physical “host” machine.  Each virtual machine runs its own operating system and functions separately from the other VMs, even when they are all running on the same host. This means that, for example, a virtual MacOS virtual machine can run on a physical PC.</p>
-- It can start only a single VM on a VMX.
-- It can run only a limited number of VMs on a system.
+
 <br>
 
 **What is ERPNext?**
