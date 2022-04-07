@@ -173,22 +173,7 @@ It helps you to effectively manage administration and allows you to focus on wha
 
 <br>
 
-<!----------------------------------------------------------------------------------------------------------------------------->
-**Date : 24-Feb-2022** 
-<h3 align='center'>Learning about how to import data in erpnext from csv file</h3>
-- Try to import data in erpnext app throught csv file.
-- Apply pagination in erpnext webpage.
 
-<br>
-
-
-<!----------------------------------------------------------------------------------------------------------------------------->
-**Date : 28-Feb-2022** 
-<h3 align='center'>Creating Web page in ErpNext</h3>
-- Creating Static Webpage on Erpnext.
-- Learning Frappe School Module.
-
-<br>
 
 <!----------------------------------------------------------------------------------------------------------------------------->
 **Date : 07-Apr-2022** 
