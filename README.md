@@ -190,4 +190,12 @@ It helps you to effectively manage administration and allows you to focus on wha
 
 <br>
 
+<!----------------------------------------------------------------------------------------------------------------------------->
+**Date : 07-Apr-2022** 
+<h3 align='center'>Pagination on webpage in Library Management System</h3>
+Firstly, i had created a library management system which had 5 doctypes. I gave web view to Article doctype. Then two files article_row.html and article.html were automatically generated in doctype folder. On webpageof Article doctype, whole list of articles was visible. But we wanted to apply pagination on the webpage. So i tried from a video (url: https://youtu.be/rDC-5ZJTmOU ). 
+I created a file utils.py in library_management folder where i write the function of pagination for showing 4 articles on single page. 
+Then in video, two files python and html were created in www > Article folder. I did the same but it didn't worked for me. After trying many ways, i created these files directly in www folder, then it worked. In python file, pagination function was called. And in html file i write jinja code to display the list on webpage and applied "previous" and "next" buttons. 
+Now 4 articles are visible on webpage and previous, next buttons are working fine.
 
+<br>
