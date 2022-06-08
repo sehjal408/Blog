@@ -53,81 +53,195 @@ Frappe, pronounced fra-pay, is a full stack, batteries-included, web framework w
 
 The key difference in Frappe compared to other frameworks is that meta-data is also treated as data. This enables you to build front-ends very easily. We believe in a monolithic architecture, so Frappe comes with almost everything you need to build a modern web application. It has a full featured Admin UI called the Desk that handles forms, navigation, lists, menus, permissions, file attachment and much more out of the box.
 <br>
+<br>
 
 **Date: 7-Feb-2022**
 
 ## Installation of Frappe FrameWork on linux based System:
 
-Installed frappe from https://github.com/D-codE-Hub/ERPNext-installation-Guide/blob/main/README.md documentation till step 13.
-Pre-requisites for frappe framework:
-  Python 3.6+
-  Node.js 14+
+Installed frappe from https://github.com/D-codE-Hub/ERPNext-installation-Guide/blob/main/README.md documentation till step 13.<br>
+Pre-requisites for frappe framework:<br>
+  Python 3.6+<br>
+  Node.js 14+<br>
   Redis 5                                      
   MariaDB 10.3.x / Postgres 9.5.x            
   yarn 1.12+                            
   pip 20+          
 <br>
 
-<!----------------------------------------------------------------------------------------------------------------------------->
-**Date : 8-Feb-2022**
-<h3 align='center'>Introduction to Github Pages</h3>
+**Date: 8-Feb-2022**
 
-- Getting Information What is GitHub Pages.
-- Create a New Repository on GitHub.
-- Setting Repository as the main branch and setting a theme for GitHub pages.
-"policy domain="path" rights="none" pattern="@*"- Learning about Personal access tokens for push Local Repository on GitHub.
-- Learning Syntax of Markdown Language in GitHub.
+## Create a site on frappe and run on local server.
+
+- First, Go in bench folder. 
+- Then, Start bench
+- Create a site using following command: 
+                                             `bench new-site <site-name>`
+- This command will create a new database, so you need to enter your MySQL root password. It will also ask to set the password for the Administrator user, just set a password that you won't forget.
+- Access the site on localhost in the browser. 
+(However, bench allows you to create multiple sites and access them separately in the browser on the same port. This is what we call multi-tenancy support in bench. So to access another site we can use the command: 
+                                              `bench use <site-name> `
+This command will set the current site.)
+
+- Enter Administrator as the user and password that you set while creating the site. After successful login, complete the wizard by selecting language etc. Then you will able to see the desk.
 <br>
 
-<!----------------------------------------------------------------------------------------------------------------------------->
-**Date : 9-Feb-2022** 
-<h3 align='center'>Library Management System application in frappe</h3>
+**Date: 9-Feb-2022**
 
-- Created LMS app in frappe
+## Create an app and install on site in frappe
+
+Create an app with command:`bench new-app <app-name>`
+This will ask for App’s Title, Description, Publisher, Email, Icon etc.
+Fill all details and an app with name  of your app will be created in the apps folder.
+
+Now install this app on the site that we created earlier with the following command: ` bench –site <site-name> install-app <app-name>`
+With this the app will installed on site. To check if app installed, Go on site, login with username and password and click on about.
+Here, two apps were installed, first is Frappe (it is automatically installed when we create site), second is the app we created.
+
+I created an app named library_management
+
+The app will create certains file in the app folder the whole structure is:
+- library_management: This directory will contain all the source code for your app 
+- public: Store static files that will be served from Nginx in production 
+- templates: Jinja templates used to render web views 
+- www: Web pages that are served based on their directory path 
+- library_management: Default Module bootstrapped with app 
+- modules.txt: List of modules defined in the app 
+- patches.txt: Patch entries for database migrations 
+- hooks.py: Hooks used to extend or intercept standard functionality provided by the framework 
+- requirements.txt: List of Python packages that will be installed when you install this app 
 <br>
 
-<!----------------------------------------------------------------------------------------------------------------------------->
-**Date : 10-Feb-2022** 
-<h3 align='center'>Introduction to Docker, Virtual Machine and ERPNext</h3>
+**Date: 10-Feb-2022**
 
-**What is Doctype?**
+## Create Library Management System in frappe.
 
+I learned some new commands of bench that are as following:
+
+`bench –version`: To check the version of bench.
+
+`bench –site <site-name> list-apps`: This will give the list of all apps that are installed on site.
+
+`bench –site <site-name> console`: To access the python console.
+
+`bench –site <site-name> mariadb`: To access the mariadb console.
+
+`bench backup`: Ceate a backup of the default site.
+
+`bench –site <site-name> set-admin-password <password>`: This will reset the administrator password.
+
+`bench remove-app <app-name>`: This will remove app from bench.
+
+I started building a simple Library Management System in which the Librarian can log in and manage Articles and Memberships. This will include:
+1. Article: A Book or similar item that can be rented. 
+2. Library Member: A user who is subscribed to a membership. 
+3. Library Transaction: An Issue or Return of an article. 
+4. Library Membership: A document that represents an active membership of a Library Member. 
+5. Library Settings: Settings that define values like Loan Period and the maximum number of articles that can be issued at a time. 
 <br>
 
+**Date: 11-Feb-2022**
 
+## Introduction to Doc Types in Frappe
+
+I follow https://frappe.school/courses/frappe-framework-tutorial tutorial for creating LMS. 
+
+A DocType is the core building block of any application based on the Frappe Framework. It describes the Model and the View of your data. It contains what fields are stored for your data, and how they behave with respect to each other. It contains information about how your data is named.
+When you create a DocType, a JSON object is created which in turn creates a database table.
+To enable rapid application development, Frappe Framework follows some standard conventions.
+1. DocType is always singular. If you want to store a list of articles in the database, you should name the doctype Article. 
+2. Table names are prefixed with tab. So the table name for Article doctype is tabArticle. 
+3. The standard way to create a DocType is by typing new doctype in the search bar in the Desk. 
+
+A DocType not only stores fields, but also other information about how your data behaves in the system. We call this Meta. Since this meta-data is also stored in a database table, it makes it easy to change meta-data on the fly without writing much code.
+
+Before we can create DocTypes, we need to enable developer mode on with command: `bench set-config -g developer_mode true`. This will enable boilerplate creation when we create doctypes and we can track them into version control with our app.
 <br>
 
-**What is ERPNext?**
-<p align="justify">ERPNext is a full-featured business management solution that helps SMEs to record all their business transactions in a single system. With ERPNext, SMEs can make informed, fact-based, timely decisions to remain ahead in the competition. It serves as the backbone of a business adding strength, transparency, and control to your growing enterprise.</p>
+**Date: 12-Feb-2022**
+
+## Creating Article DocType for LMS
+
+Go to the doctype list using the Awesomebar. This list will include Doc Types bundled with the framework.
+ 
+- Enter the Name for the DocType 
+- Then select a Module Named LMS which we have created earlier or we can create a new module. 
+- We require fileds for the doctype. We created the required below fields in the doctype: 
+  - Article Name (Data, Mandatory) 
+  - Image (Attach Image) 
+  - Author (Data) 
+  - Description (Text Editor) 
+  - ISBN (Data) 
+  - Status (Select, here we can add a drodown with options Issued and Available) 
+  - Publisher (Data) 
+
+- After adding the fields, click on Save. 
+
+Our doctype is created and we can now Add data to our doctype. Now We can go to the article list and create " Article ". As we created new article the data wiil be pushed to the database in the form of tables and we can also check its data by giving command in the terminal
+`bench --site library.test mariadb `
+
+Here it will show all the database of a perticluar site. And we can check and update our data using differnet sql commands by selecting differnet databasea and tables.
 <br>
 
-<!----------------------------------------------------------------------------------------------------------------------------->
-**Date : 11-Feb-2022** 
-<h3 align='center'>Installing ERPNext in Frappe-bench</h3>
+**Date: 14-Feb-2022**
 
-- If Frappe-bench installed in system follow second method otherwise you will get error.
-- Installion done with two manner 
-- By Adduser in linux
-- And create Erpnext app and site in frappe-bench Diretory.
-- For installation steps [Click here](https://github.com/D-codE-Hub/ERPNext-installation-Guide/blob/main/README.md). 
-<br>
+## Creating Different DocTypes in LMS
 
-<!----------------------------------------------------------------------------------------------------------------------------->
-**Date : 12-Feb-2022** 
-<h3 align='center'>Introduction to Selenium, Budibase, Coding standard for program</h3>
-- Selenium is browser automation tool by which you can create a script which automatically done task like fill credential and click for search.
-- Budibase is a development platform designed for speed and productivity. 
-- <p align="justify">With Budibase, developers no-longer experience repetition, long-dev cycles, and frustration. Instead, developers are more productive, happier, and can deliver applications they're proud of in minutes.</p>
-- <p align="justify">How to write code in Any script so that it can easily read by other programmer who contribute to your project, take variable name which should be relevant with its function.</p>
-<br>
+### Library Member
 
-<!----------------------------------------------------------------------------------------------------------------------------->
-**Date : 14-Feb-2022** 
-<h3 align='center'>Try to Solve error redis-server during Installation</h3>
-**error while loading shared libraries: libatomic.so.1: cannot open shared object file: No such file or directory**
-- sudo apt purge libatomic1.
-- install houncho  if file is missing.
+Create “Library Member” Doctype with following fields.
 
+- First Name (Data, Mandatory)
+- Last Name ( Data ) 
+- Full Name (Data, Read Only) 
+- Email Address (Data) 
+- Phone (Data) 
+
+Write code in python controller class such that Full Name is computed automatically from First Name and Last Name. Make the following changes in library_member.py :
+
+```
+class LibraryMember(Document):
+     #this method will run every time a document is saved
+       def before_save(self):
+          self.full_name = f'{self.first_name} {self.last_name or ""}'
+          
+```
+### Library Membership
+
+Create “Library Membership” Doctype with the following fields:
+
+- Library Member (Link, Mandatory)
+- Full Name (Data, Read Only) 
+- From Date (Date) 
+- To Date (Date) 
+- Paid (Check) 
+
+Make this doctype a Submittable doctype. A Submittable doctype can have 3 states: Draft, Submitted, Cancelled. A document in the Draft state can be changed like any document, however once it is in Submitted state, the value of any field in the document cannot be changed. A Submitted document can be Cancelled, which makes the document invalid. 
+
+Write the following code in library_membership.py that will make sure whenever a Library Membership is created, there is no active membership for the Member.
+
+```
+from __future__ import unicode_literals
+
+import frappe
+from frappe.model.document import Document
+
+class LibraryMembership(Document):
+    # check before submitting this document
+    def before_submit(self):
+        exists = frappe.db.exists(
+            "Library Membership",
+            {
+                "library_member": self.library_member,
+                # check for submitted documents
+                "docstatus": 1,
+                # check if the membership's end date is later than this membership's start date
+                "to_date": (">", self.from_date),
+            },
+        )
+        if exists:
+            frappe.throw("There is an active membership for this member")
+```
 <br>
 
 <!----------------------------------------------------------------------------------------------------------------------------->
