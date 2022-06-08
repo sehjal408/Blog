@@ -7,8 +7,7 @@ Linux is an open-source operating system like other operating systems such as Mi
 - The Linux operating systems now offer millions of programs/applications and Linux softwares to choose from, most of them are free! 
 - Once you have Linux installed you no longer need an antivirus! Linux is a highly secure system. More so, there is a global development community constantly looking at ways to enhance its security. With each upgrade, the OS becomes more secure and robust 
 - Linux freeware is the OS of choice for Server environments due to its stability and reliability (Mega-companies like Amazon, Facebook, and Google use Linux for their Servers). A Linux based server could run non-stop without a reboot for years on end. 
-
-
+<br>
 
 **Date: 2-Feb-2022**
 
@@ -21,48 +20,52 @@ Linux is an open-source operating system like other operating systems such as Mi
 - Select where to install alongside window or Erase disk or something else. 
 - Then Click next and start ubuntu installation. 
 - For More detail about Installation Guide [Click here](https://phoenixnap.com/kb/install-ubuntu-20-04)
-
-<!----------------------------------------------------------------------------------------------------------------------------->
-**Date : 3-Feb-2022**
-<h3 align='center'>Run Cgi Script</h3>
-
-<p align="justify">CGI stands for Common Gateway Interface. CGI defines a standard way in which information may be passed to and from the browser and server. Any program or script that can process information according to the CGI specification can, in theory, be used to code a CGI script.</p>
-
-- Create a cgi scirpt.
-- Run it on Localhost using Apache Server.
 <br>
 
-<!----------------------------------------------------------------------------------------------------------------------------->
-**Date : 4-Feb-2022**
-<h3 align='center'>Image to video</h3>
+**Date: 3-Feb-2022**
 
-- Create a python Script.
-- install pip,Image-MagicK on your system.
-- goto ---- /etc/ImageMagick-6/policy.xml file. 
-- Comment out line "policy domain="path" rights="none" pattern="@*" 
-- Run the script by using python3 filename.py.
+## Introduction to LAMP Stack
+
+A “LAMP” stack is a group of open-source software that is typically installed together to enable a server to host dynamic websites and web apps. LAMP consists of four components necessary to establish a fully functional web development environment. The first letters of the components' names make up the LAMP acronym:
+
+- Linux is an operating system used to run the rest of the components. 
+- Apache HTTP Server is a web server software used to serve static web pages. 
+- MySQL is a relational database management system used for creating and managing web databases, but also for data warehousing, application logging, e-commerce, etc. 
+- PHP, Perl, and Python are programming languages are used to create web applications. 
+- Installing lamp on Ubuntu System. 
+- Verifying by run LAMP on localhost. 
 <br>
 
-<!----------------------------------------------------------------------------------------------------------------------------->
-**Date : 5-Feb-2022**
-<h3 align='center'>Introduction to frappe</h3>
+**Date: 4-Feb-2022**
 
-<p align="justify">Frappe, pronounced fra-pay, is a full stack, batteries-included, web framework written in Python and Javascript with MariaDB as the database. It is the framework which powers ERPNext, is pretty generic and can be used to build database driven apps.</p>
-#### Why Frappe?
-<p align="justify">The key difference in Frappe compared to other frameworks is that meta-data is also treated as data. This enables you to build front-ends very easily. We believe in a monolithic architecture, so Frappe comes with almost everything you need to build a modern web application. It has a full featured Admin UI called the Desk that handles forms, navigation, lists, menus, permissions, file attachment and much more out of the box.</p>
+## Run Cgi Script
 
-- Install Frappe-bench and its required tool. For more info [Click here](https://frappeframework.com/docs/v13/user/en/installation).
+A CGI script is any program that runs on a web server. CGI stands for Common Gateway Interface. CGI defines a standard way in which information may be passed to and from the browser and server. Any program or script that can process information according to the CGI specification can, in theory, be used to code a CGI script.
+- Create a cgi scirpt. 
+- Run it on Localhost using Apache Server. 
 <br>
 
-<!----------------------------------------------------------------------------------------------------------------------------->
-**Date : 7-Feb-2022**
-<h3 align='center'>Creating App and Site & run on local server in Frappe</h3>
+**Date: 5-Feb-2022**
 
-- Start Bench in one Terminal.
-- In Second Terminal.
-- Creating App by using **bench new-app library_management** inside Frappe-bench Directory.
-- Creating site by using **bench new-site library.test** inside Frappe-bench Directory.
-- Run Site on Localhost by using library.test custom port name.
+## Introduction to Frappe
+
+Frappe, pronounced fra-pay, is a full stack, batteries-included, web framework written in Python and Javascript with MariaDB as the database. It is the framework which powers erpnext, is pretty generic and can be used to build database driven apps.
+
+The key difference in Frappe compared to other frameworks is that meta-data is also treated as data. This enables you to build front-ends very easily. We believe in a monolithic architecture, so Frappe comes with almost everything you need to build a modern web application. It has a full featured Admin UI called the Desk that handles forms, navigation, lists, menus, permissions, file attachment and much more out of the box.
+<br>
+
+**Date: 7-Feb-2022**
+
+## Installation of Frappe FrameWork on linux based System:
+
+Installed frappe from https://github.com/D-codE-Hub/ERPNext-installation-Guide/blob/main/README.md documentation till step 13.
+Pre-requisites for frappe framework:
+  Python 3.6+
+  Node.js 14+
+  Redis 5                                      
+  MariaDB 10.3.x / Postgres 9.5.x            
+  yarn 1.12+                            
+  pip 20+          
 <br>
 
 <!----------------------------------------------------------------------------------------------------------------------------->
