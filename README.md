@@ -8,6 +8,8 @@ Linux is an open-source operating system like other operating systems such as Mi
 - Once you have Linux installed you no longer need an antivirus! Linux is a highly secure system. More so, there is a global development community constantly looking at ways to enhance its security. With each upgrade, the OS becomes more secure and robust 
 - Linux freeware is the OS of choice for Server environments due to its stability and reliability (Mega-companies like Amazon, Facebook, and Google use Linux for their Servers). A Linux based server could run non-stop without a reboot for years on end. 
 
+
+
 **Date: 2-Feb-2022**
 
 ## Download the linux distribution of your choice. 
