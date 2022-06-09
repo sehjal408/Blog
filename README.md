@@ -934,4 +934,53 @@ So being a part of a developer team one must need to Know Github in order to hav
 - form Documentation [Click here ](https://github.com/joshnh/Git-Commands)
 <br>
 
+**Date: 24-March-2022**
+
+## Installing New ERPNext on server
+
+- First we install the new instance of frappe framework on the New Server then install erpnext with education domain. 
+- After this we are collecting students around 5000 and teachers (114) data from Nankana Sahib Public School. 
+- Arranging data according to doctype in erpnext. 
+- Setting up the school. 
+<br>
+
+**Date: 25-March-2022**
+
+## Explore Company’s Default Values
+
+**Default Holiday List:**
+Holiday List is a list which contains the dates of holidays. Most organizations have a standard Holiday List for their employees. However, some of them may have different holiday lists based on different Locations or Departments. In ERPNext, you can configure multiple Holiday Lists and assign them to your employees based on your requirements.
+
+**Default Letter Head:**
+A Letter Head contains your organization's name, logo, address, etc which appears at the top portion in documents. Every company has a default Letter Head. These Letter Head values are generally set as Header and Footer in the documents. In ERPNext, you can capture these details in the Letter Head master.
+
+**Default Finance Book:**
+A Finance Book is a book against which all the accounting entries are booked. You can have multiple finance books. For example, one book for tax authorities and another for stockholders. This is useful if you have to report depreciation and other values in different ways based on regulatory requirements.
+<br>
+
+**Date: 26-March-2022**
+
+## Adding Students and Arranging CSV
+
+Today, We got student, instructor, classes data from Nankana Sahib Pubic School. Then Sir assigned me the task to upload all students on server through csv files.
+
+Before uploading students, we have to create programs and courses. So I helped Aman in creating Programs and Courses.
+
+Then I start arranging data of students in csv file. All team members helped me in arranging data because there were arount 3000 students. 
+<br>
+
+**Date: 28-March-2022**
+
+## Add Students on New Server
+
+To add students in school, we have to upload student csv in Student Applicant. Then we will approve students and enroll in their classes. 
+
+For Student Applicants,
+
+1. First, Go to the Student Applicant. Then click on import then Add Data Import. 
+2. Then the New Data Import form will open. Here, add the doctype "Student Applicant" in the Document Type field, and select "Insert New Record" in Import Type. Then save it.
+3. Then download the template with required fields like First name, Middle name, Last name, Program, Application Status etc. Application Status of all students should be "Approved". Otherwise we have to Approve all manually.
+4. Create the csv file of all students according to the fields in the downloaded template. Then Attach csv file in "Import File". Then click on "Save" then "Start Import".
+5. Here, if you find any error in fields then you can export the failed error logs, change it and upload it again.
+6. Now all students will be visible in the Student Applicant List.
 
