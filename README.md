@@ -359,7 +359,7 @@ Go to Article doctype, and scroll down to the Web View section.
 When we made Article a web view, two html files were created namely: article.html and article_row.html. We can use Bootstrap 4 to style pages. We can write code in html files for styling of webpage. 
 
 Write following code in article.html file:
-```
+```html
 {% raw %}
 <div class="py-20 row">
     <div class="col-sm-2">
@@ -385,7 +385,7 @@ Write following code in article.html file:
 {% endraw %}
 ```
 Edit the article_row.html and add the following HTML:
-```
+```html
 <div class="py-8 row">
     <div class="col-sm-1">
         <img alt="{{ doc.name }}" src="{{ doc.image }}">
