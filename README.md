@@ -885,3 +885,53 @@ Socket.IO is a library that enables low-latency, bidirectional and event-based c
 
 Just like a real scaffolding in a building construction site, scaffolding gives you some kind of a (fast, simplified, temporary) structure for your project, on which you can rely to build the real project. It can be (and is today) used to describe many things – from abstracting DB layers, to web apps folder structures, and to generating and managing project dependencies. It is not something that is specific to any language / technology, just like the term skeleton or boilerplate. You build some fast, simplified, (sometimes external, sometimes temporary) structure that will help you to build the real,
 more complex, finalized structure under, above, inside or outside of that temporary structure . Scaffolding enables developers a tool to quickly create a running web-based environment for the Internet.
+<br>
+
+**Date: 21-March-2022**
+
+## Student Attendance Module
+
+I explored about Student Attendaance Module. We can mark attendance of students manually one by one or in bulk with Student Attendance Tool.
+
+We will not mark attendance manually, we will use Tool to mark attendance in bulk.
+
+In the Student Attendance Tool, We can mark attendance based on Student Group or Course Schedule.
+
+- In Course Schedule, first we have to schedule the course with Instructor, Room and Time of lecture. After setting up the the course schedule, we can mark attendance of all students that belong to this course.
+- If we mark attendance based on Student Group, then further there are three options i.e. Group based on: Batch, Course and Activity.
+	- Based on Batch: We can mark attendance of all students of a group based on batch that is section A or section B.
+	- Based on Course: Here, we can mark attendance of all students of the group i.e. based on course.
+	- Based on Activity: Here, we can mark attendance based on the Activity group.
+<br>
+
+**Date: 22-March-2022**
+
+## Create Academic Manager Role 
+
+Sir assigned us the task to create an academic manager role that can add a studet group, assign instructors to the student group and create course schedule.
+
+So we (I, Kiranjeet, Pooja) have created new role academic manager role. 
+
+Create a new role with name Academic Manager in the Role list. Give desk access to this role. Then go to Role Permission Manager. Here select doctypes and add all permissions required for this role.
+<br>
+
+**Date: 23-March-2022**
+
+## Learned Github 
+
+So being a part of a developer team one must need to Know Github in order to have a seamless conversation, information and code can be shared easily. Some basic github commands are as following:-
+
+- git init - to initialize a repository 
+- git add . to add the whole files and folder 
+- git add filename.extension to add the specific file 
+- git commit -m "Your Message" to commit the changes 
+- git remote add origin git URL 
+- git push -u origin [branch name] 
+- git stash clear -to clear all stashed enteries 
+- git checkout branch_name move across beanches of specifi reporsitory 
+- git status to check the curent status of the files 
+- git pull origin [branch name] pull changes from the remote url 
+- form Documentation [Click here ](https://github.com/joshnh/Git-Commands)
+<br>
+
+
