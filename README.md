@@ -361,7 +361,6 @@ When we made Article a web view, two html files were created namely: article.htm
 Write following code in article.html file:
 ```html
 
-{% block page_content %}
 <div class="py-20 row">
     <div class="col-sm-2">
         <img alt="{{ title }}" src="{{ image }}">
@@ -383,7 +382,7 @@ Write following code in article.html file:
         <p>{{ description }}</p>
     </div>
 </div>
-{% endblock %}
+
 ```
 Edit the article_row.html and add the following HTML:
 ```html
