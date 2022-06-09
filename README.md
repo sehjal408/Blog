@@ -675,10 +675,10 @@ A Jinja template is simply a text file. Jinja can generate any text-based format
 A template contains variables and/or expressions, which get replaced with values when a template is rendered; and tags, which control the logic of the template. The template syntax is heavily inspired by Django and Python.
 Delimiters
 Here are some delimiters that are used in the Jinja syntax:
-- {%...%} is used for statements. 
-- {{...}} is used for variables. 
-- {#...#} is used for comments. 
-- #...## is used for line statements. 
+- `{%...%}` is used for statements. 
+- `{{...}}` is used for variables. 
+- `{#...#}` is used for comments. 
+- `#...##` is used for line statements. 
 <br>
 
 **Date: 12-March-2022**
