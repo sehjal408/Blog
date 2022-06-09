@@ -1107,7 +1107,7 @@ But our need is to apply pagination with Previous and Next buttons. I am reading
 - Now 4 articles are visible on webpage and previous, next buttons are working fine. 
 <br>
 
-**Date: 9-April-2022 **
+**Date: 9-April-2022**
 
 ## Add LMS App in Github Repository
 
@@ -1115,4 +1115,28 @@ But our need is to apply pagination with Previous and Next buttons. I am reading
 - In add on I'm finding a command how to add repositiory from terminal to github. 
 - Then I upload my Library Management System application on my repository with some basic commands of github.
 - To check Click here: https://github.com/sehjal408/LMS
+<br>
+
+**Date: 11-April-2022**
+
+## Install Chat App on Server
+
+We have installed Chat app and enabled it on server using following commands.
+
+`bench get-app https://github.com/Software-Dechat --branch main`
+`bench --site gne11.gndec.ac.in install-app chat`
+
+Only System User are able to use chat app. It will not visible to the Website Users.
+<br>
+
+**Date: 12-April-2022**
+
+## Learning Management System 
+
+This allows institutes to publish their programs on their website. Programs can contain rich text articles, videos, and even quizzes. The progress of individual students can be tracked through the portal.
+
+**Enabling LMS**
+
+LMS is disabled by default and can be enabled from Education Settings.
+To enable LMS we first go to education module then click the settings and open education settings. Here, there is a checkbox using which the LMS can be enabled. The portal is hosted on the /lms route. Here all the programs are shown in the form of cards. Each card is clickable and navigates to the corresponding program/course/topic/content. 
 <br>
