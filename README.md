@@ -1021,4 +1021,28 @@ For Enrollinng Students,
 6. Click on the "Enroll Students" button.
 7. Repeat these steps for all Programs.
 8. In Admission, click on Program Enrollment. Then all students will be visible here with status "Draft". You have to submit all then they will be in Submitted status and they automatically get enrolled in courses.
+<br>
 
+**Date: 31-March-2022**
+
+## Enroll Students in Groups
+
+We created Student Groups for all programs. 
+For Creating Student Group,
+
+1. Go to Education, then Studnet Group.
+2. Click on New Student Group.
+3. Select “Batch” in Group Based On field.
+4. Enter other details like Academic Year, Term, Program, Group name etc.
+5. Then Save it and click on Get Students.
+6. All students of this program will visible there. Save it.
+<br>
+
+**Date: 1-April-2022**
+
+## Student vs Instructor Enrollment
+
+I have completed all my tasks that are assigned by sir. And Japreet was inserting instructors and employees. So I helped her in inserting instructors and users.
+
+After completion, we compare the Enrollment of Students and Instructors in erp. It has been found that after adding students to the programs and courses, that only those programs and courses are visible to the students, in which the enrollment has been done. But in the case of Instructors all the courses are visible and he/she is able to create/delete the content in all the programs and courses. We need to find the way with which only those courses should visible to instructor to whom he/she belongs. 
+<br>
