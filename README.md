@@ -671,11 +671,13 @@ time and its users and we can invite users by sending mails.
 ## Introduction to Jinja Template
 
 Jinja is a fast, expressive, extensible templating engine. Special placeholders in the template allow writing code similar to Python syntax. Then the template is passed data to render the final document.
+
 A Jinja template is simply a text file. Jinja can generate any text-based format (HTML, XML, CSV, LaTeX, etc.). A Jinja template doesn’t need to have a specific extension: .html, .xml, or any other extension is just fine.
+
 A template contains variables and/or expressions, which get replaced with values when a template is rendered; and tags, which control the logic of the template. The template syntax is heavily inspired by Django and Python.
+
 Delimiters
 Here are some delimiters that are used in the Jinja syntax:
-
 <br>
 
 **Date: 12-March-2022**
