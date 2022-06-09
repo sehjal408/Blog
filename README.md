@@ -771,3 +771,112 @@ Here are some delimiters that are used in the Jinja syntax:
 ```
 
 - Now, we created the links of Student and Mentor list on navigation bar of website.
+<br>
+
+**Date: 15-March-2022**
+
+## Mentor-Mentee Table on Webpage
+
+- Now we have to create a table of mentees and their assigned mentors on webpage.
+- For this we create a new html file in the www folder.
+- Then write the following code :
+```html
+{% raw %}
+{% block page_content %}
+
+{% set u2=frappe.get_all('Mentee',fields=['roll_no','name','full_name','mentor_name'], order_by='roll_no asc') %}
+{% set u3=frappe.get_all('Mentor',fields=['full_name','code']) %}
+
+<table class="table table-condensed table-hover table-bordered">
+<tr>
+    <th>Roll No</th>
+    <th>Mentee Name</th>
+    <th>Mentor Name</th>
+</tr>
+
+{% for i in u2 %}
+
+<tr>
+    <td>{{i.roll_no}}</td>
+    <td>{{i.full_name}}</td>
+    <td>{{i.mentor_name}}</td>
+
+</tr>
+{% endfor %}
+
+
+{% endblock %}
+{% endraw %}
+```
+
+- With this, table will created on webpage. Roll no, Mentee Name and Mentor Name will be fetched in the table. Check screenshot below:
+<br>
+
+**Date: 16-March-2022**
+
+## Notice Board App
+
+Today, we create a notice board app in frappe. NoticeBoard for an institute regarding the important information provided by the Institute.
+
+- Create Doctype according to structure discussed in team.
+- Add the fields like Title, Description, Signature of the uploader, Date and Attachment.
+- Applied validations in python class.
+- Also can see how many have seen the notice.
+<br>
+
+**Date: 17-March-2022**
+
+## Create Program and Courses
+
+I am reading the documentation of education module and implementing Program and Courses module.
+
+**Course:-**
+
+A course can be considered as a subject or a part of an educational program which is to be taught for a term. Corses are subjects in the school. A course will have a set of topics that are to be covered under it's scope. Steps to create course:
+
+1. Go to Course List and click on New.
+2. Enter the Course Name.
+3. Select the Department under which this course is being made.
+4. Add the Topics. You can also create the topics from here itself.
+5. Add the Description for the course.
+6. Save.
+
+**Program:-**
+
+A Program will have an educational curriculum defined by your institute to streamline the learning process and goals in each subject or course. Programs are classes in the school. Steps to create programs:
+
+1. Go to the Program list and click on New.
+2. Enter the Program Name and the Program Abbreviation.
+3. Select the Department for the Program.
+4. Select and add the courses within the Program.
+5. Save.
+<br>
+
+**Date: 18-March-2022**
+
+## Portal Settings for Program
+
+- **Is Published:** For every program created in ERPNext, there is a check-box in the Portal settings, that allows the Program to be published on the portal. This can facilitate Self Enrollment and other settings for the program. Once this box is checked, the following options will be available for the user.
+- **Allow Self Enroll:** Once this box is checked, the students/applicants would be able to enroll themselves for the program on the portal.
+- **Is Featured:** Enabling this option would allow the program to be featured on the portal.
+- **Intro Video:** Enter the link for the video that you wish to add an Introductory Video for the Program.
+- **Description:** Add the description of the Program which you want to be visible on the portal.
+
+**Student Attendance Module**
+
+Sir assigned me the task of Attendance module and to explore how we can mark the attendance based on course, activity or batch.
+
+Student Attendance allows you to track and manage the attendance of a student for a day. The Attendance module is designed to help teachers easily mark student attendance during class.
+Attendance Records can be created against Students on a daily basis.
+<br>
+
+**Date: 19-March-2022**
+
+## Gunicorn, Socket.io, Scaffhold
+
+Gunicorn is a WSGI(Web Server Gateway Interface) server. Gunicorn is built so many different web servers can interact with it. It also does not really care what you used to build your web application - as long as it can be interacted with using the WSGI interface.Gunicorn takes care of everything which happens in-between the web server and your web application. 
+
+Socket.IO is a library that enables low-latency, bidirectional and event-based communication between a client and a server. It is built on top of the WebSocket protocol and provides additional guarantees like fallback to HTTP long-polling or automatic reconnection. There are several Socket.IO server implementations available: JavaScript, Java, Python.
+
+Just like a real scaffolding in a building construction site, scaffolding gives you some kind of a (fast, simplified, temporary) structure for your project, on which you can rely to build the real project. It can be (and is today) used to describe many things – from abstracting DB layers, to web apps folder structures, and to generating and managing project dependencies. It is not something that is specific to any language / technology, just like the term skeleton or boilerplate. You build some fast, simplified, (sometimes external, sometimes temporary) structure that will help you to build the real,
+more complex, finalized structure under, above, inside or outside of that temporary structure . Scaffolding enables developers a tool to quickly create a running web-based environment for the Internet.
