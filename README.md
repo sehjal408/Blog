@@ -985,4 +985,40 @@ For Student Applicants,
 4. Create the csv file of all students according to the fields in the downloaded template. Then Attach csv file in "Import File". Then click on "Save" then "Start Import".
 5. Here, if you find any error in fields then you can export the failed error logs, change it and upload it again.
 6. Now all students will be visible in the Student Applicant List.
+<br>
+
+**Date: 29-March-2022**
+
+## Add User on New Server
+
+After uploading students, we have to create users of all students. It means we have to create their login ids and passwords. So that students can login and check the content, quiz etc of their subjects.
+
+For Students User,
+
+1. First, go to Student Applicants. Click on Import, then Add Data Import.
+2. Then the New Data Import form will open. Here, add the doctype "Student Applicant" in the Document Type field, and select "Update Existing Record" in Import Type. Then save it.
+3. Then, click on "Download Template". Select "All Records" in Export Type. Select the First Name, Middle Name, Last Name, Student Email Address and download the template.
+4. Then the csv file of all students will be downloaded. In this, add the field "Set New Password" and create passwords of all students.
+5. Add column "Role (Roles Assigned)" and write "Student" for all students.
+6. Then go to the User list, click on import then Add Data Import. Then the New Data Import form will open. Here, add the doctype "User" in the Document Type field, and select "Insert New Record" in Import Type. Then save it.
+7. Then attach the file, click on "Save" and then "Start Import".
+8. All students will become users with Student role.
+<br>
+
+**Date: 30-March-2022**
+
+## Enroll Students in Programs
+
+Now we have to enroll all students in their respective classes. So that their subjects and content of subjects will visible on their account.
+
+For Enrollinng Students,
+
+1. If you have already set the "Default Email" then go to step 3. Otherwise, In Settings, click on "Education Settings". Then the Education Setting page will open.
+2. Then enable the option "Skip User creation for new Student".
+3. In Tools, Click on Program Enrollment Tool, the new form will open.
+4. Select "Student Applicant" in the field "Get Students From" and Select Program in which you want to enroll students. Select Academic Year and Academic Term.
+5. Then click on "Get Students". Here, you will get all students from this Program.
+6. Click on the "Enroll Students" button.
+7. Repeat these steps for all Programs.
+8. In Admission, click on Program Enrollment. Then all students will be visible here with status "Draft". You have to submit all then they will be in Submitted status and they automatically get enrolled in courses.
 
