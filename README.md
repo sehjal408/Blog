@@ -1124,9 +1124,11 @@ But our need is to apply pagination with Previous and Next buttons. I am reading
 We have installed Chat app and enabled it on server using following commands.
 
 `bench get-app https://github.com/Software-Dechat --branch main`
+
 `bench --site gne11.gndec.ac.in install-app chat`
 
 Only System User are able to use chat app. It will not visible to the Website Users.
+<br>
 <br>
 
 **Date: 12-April-2022**
@@ -1140,3 +1142,17 @@ This allows institutes to publish their programs on their website. Programs can 
 LMS is disabled by default and can be enabled from Education Settings.
 To enable LMS we first go to education module then click the settings and open education settings. Here, there is a checkbox using which the LMS can be enabled. The portal is hosted on the /lms route. Here all the programs are shown in the form of cards. Each card is clickable and navigates to the corresponding program/course/topic/content. 
 <br>
+
+**Date: 13-April-2022**
+
+## Setting Up Learning Management System for NSPS
+
+- To make the Program accessible on the portal, tick the 'Is Published' checkbox in the Program form. You can also tick the 'Is Featured' checkbox, which will show it on the portal landing page. The portal will automatically fetch the courses from the course table in the program.
+
+- On the portal, for students to be able to view the programs on the portal, a program has to be marked as Published. On the portal students will be able to see only those courses they are enrolled to or they are allowed to enroll into.
+
+- If 'Allow Self Enroll' is checked, then the program will be visible to all students whether they are enrolled in the program or not. Students can enroll themselves in these programs and start learning, this way we can host private programs on your portal.
+
+- For each of the courses in a particular program, we can set a course intro and a course hero image to be used on the portal. There is a table to add topics too, these topics will be displayed on the LMS to all enrolled students.
+
+- Similar to the course, Topic has a table where we can add the content. We can add three different types of content viz. Video, Article and a Quiz.
