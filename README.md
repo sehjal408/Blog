@@ -1085,6 +1085,7 @@ I am doing this task by reading the python files and understanding the concepts 
 
 After exploring I found that there is a global search which we have to enable for webpages. First go to Website, then Website Settings. Check Navbar Section, here we have to enable the checkbox “Include Search in Top Bar”. Now Search Filter will visible on our webpage.
 <br>
+<br>
 
 **Date: 7-April-2022**
 
@@ -1093,4 +1094,25 @@ After exploring I found that there is a global search which we have to enable fo
 When we give web view to a doctype, then list is visible on webpage. If there are more than 20 rows in the list then, firstly only 20 will visible on webpage and a “More” button at bottom will also show. Rest of the entries will visble after clicking on More button. 
 
 But our need is to apply pagination with Previous and Next buttons. I am reading documentation of frappe and exploring a way to do this. 
+<br>
+
+**Date: 8-April-2022**
+
+## Pagination on Webpage of LMS
+
+- Firstly, I had created a library management system which had 5 doctypes. I gave web view to Article doctype. Then two files article_row.html and article.html were automatically generated in doctype folder. 
+- On webpage of Article doctype, whole list of articles was visible. But we wanted to apply pagination on the webpage. So I tried from a video (url: https://youtu.be/rDC-5ZJTmOU ). 
+- I created a file utils.py in library_management folder where I write the function of pagination for showing 4 articles on single page. Then in video, two files python and html were created in www > Article folder. I did the same but it didn't worked for me. 
+- After trying many ways, i created these files directly in www folder, then it worked. In python file, pagination function was called. And in html file i write jinja code to display the list on webpage and applied "previous" and "next" buttons. 
+- Now 4 articles are visible on webpage and previous, next buttons are working fine. 
+<br>
+
+**Date: 9-April-2022 **
+
+## Add LMS App in Github Repository
+
+- First I go through the git documentation, so that every thing done properly. 
+- In add on I'm finding a command how to add repositiory from terminal to github. 
+- Then I upload my Library Management System application on my repository with some basic commands of github.
+- To check Click here: https://github.com/sehjal408/LMS
 <br>
