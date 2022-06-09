@@ -244,34 +244,208 @@ class LibraryMembership(Document):
 ```
 <br>
 
-<!----------------------------------------------------------------------------------------------------------------------------->
-**Date : 15-Feb-2022** 
-<h3 align='center'>Introduction to Education module in Erpnext</h3>
-<p align="justify">The Education domain in ERPNext is designed to meet requirements of any organization which imparts knowledge and believe in doing so in an organized fashion. It has already been used at schools, colleges and even in private firms.
-It helps you to effectively manage administration and allows you to focus on what is most important for your institute, to educate!</p>
+**Date: 15-Feb-2022**
+
+## Library Transaction
+
+Create another doctype named “Library Transaction” with following fields:
+
+- Article (Link to Article)
+- Library Member (Link to Library Member) 
+- Type (Select with two options- Issue and Return) 
+- Date (Date of Transaction) 
+
+### Adding Validation for Transaction
+
+When an Article is issued, we should verify whether the Library Member has an active membership. We should also check whether the Article is available for Issue. Let's write the code for these validations.
+```py
+from __future__ import unicode_literals
+
+import frappe
+from frappe.model.document import Document
+
+class LibraryTransaction(Document):
+    def before_submit(self):
+        if self.type == "Issue":
+            self.validate_issue()
+            # set the article status to be Issued
+            article = frappe.get_doc("Article", self.article)
+            article.status = "Issued"
+            article.save()
+
+        elif self.type == "Return":
+            self.validate_return()
+            # set the article status to be Available
+            article = frappe.get_doc("Article", self.article)
+            article.status = "Available"
+            article.save()
+
+    def validate_issue(self):
+        self.validate_membership()
+        article = frappe.get_doc("Article", self.article)
+        # article cannot be issued if it is already issued
+        if article.status == "Issued":
+            frappe.throw("Article is already issued by another member")
+
+    def validate_return(self):
+        article = frappe.get_doc("Article", self.article)
+        # article cannot be returned if it is not issued first
+        if article.status == "Available":
+            frappe.throw("Article cannot be returned without being issued first")
+
+    def validate_membership(self):
+        # check if a valid membership exist for this library member
+        valid_membership = frappe.db.exists(
+            "Library Membership",
+            {
+                "library_member": self.library_member,
+                "docstatus": 1,
+                "from_date": ("<", self.date),
+                "to_date": (">", self.date),
+            },
+        )
+        if not valid_membership:
+            frappe.throw("The member does not have a valid membership")
+```
 <br>
 
-<!----------------------------------------------------------------------------------------------------------------------------->
-**Date : 17-Feb-2022** 
-<h3 align='center'>Introduction to Jinja Templating</h3>
-<p align='justify'>Jinja is a fast, expressive, extensible templating engine. Special placeholders in the template allow writing code similar to Python syntax. Then the template is passed data to render the final document.</p>
+**Date: 16-Feb-2022**
+
+## Library Settings
+
+Create the last doctype for our app: Library Settings. It will have the following fields:
+
+- Loan Period - Will define the loan period in number of days 
+- Maximum Number of Issued Articles - Restrict the maximum number of articles that can be issued by a single member 
+
+Since we don't need to have multiple records for these settings, we will enable Is Single for this doctype. After creating the doctype, click on Go to Library Settings, to go to the form and set the values for Loan Period and Maximum Number of Issued Articles.
+Make the change in Library Membership such that, the To Date automatically computed based on the Loan Period and the From Date.
+```py
+# get loan period and compute to_date by adding loan_period to from_date
+        loan_period = frappe.db.get_single_value("Library Settings", "loan_period")
+        self.to_date = frappe.utils.add_days(self.from_date, loan_period or 30)
+```
+
+Now, make the change in Library Transaction such that when an Article is Issued, it checks whether the maximum limit is reached.
+```py
+    def validate_maximum_limit(self):
+        max_articles = frappe.db.get_single_value("Library Settings", "max_articles")
+        count = frappe.db.count(
+            "Library Transaction",
+            {"library_member": self.library_member, "type": "Issue", "docstatus": 1},
+        )
+        if count >= max_articles:
+            frappe.throw("Maximum limit reached for issuing articles")
+```
+
+
+### Web View Pages
+
+Web View Pages are server rendered pages for website visitors. To see available articles on website, we can create webpage for articles. To enable Web View:
+
+Go to Article doctype, and scroll down to the Web View section.
+1. Enable Has Web View and Allow Guest to View 
+2. Enter articles in the Route field 
+3. Add fields named Route and Published in the fields table 
+4. Click on Save 
+<br>
+
+**Date: 17-Feb-2022**
+
+## Web View Pages
+
+When we made Article a web view, two html files were created namely: article.html and article_row.html. We can use Bootstrap 4 to style pages. We can write code in html files for styling of webpage. 
+
+Write following code in article.html file:
+```html
+{%  extends "templates/web.html" %}
+
+{% block page_content %}
+<div class="py-20 row">
+    <div class="col-sm-2">
+        <img alt="{{ title }}" src="{{ image }}">
+    </div>
+    <div class="col">
+        <h1>{{ title }}</h1>
+        <p class="lead">By {{ author }}</p>
+        <div>
+            {%- if status == 'Available' -%}
+            <span class="badge badge-success">Available</span>
+            {%- elif status == 'Issued' -%}
+            <span class="badge badge-primary">Issued</span>
+            {%- endif -%}
+        </div>
+        <div class="mt-4">
+            <div>Publisher: <strong>{{ publisher }}</strong></div>
+            <div>ISBN: <strong>{{ isbn }}</strong></div>
+        </div>
+        <p>{{ description }}</p>
+    </div>
+</div>
+{% endblock %}
+```
+Edit the article_row.html and add the following HTML:
+```html
+<div class="py-8 row">
+    <div class="col-sm-1">
+        <img alt="{{ doc.name }}" src="{{ doc.image }}">
+    </div>
+    <div class="col">
+        <a class="font-size-lg" href="{{ doc.route }}">{{ doc.name }}</a>
+        <p class="text-muted">By {{ doc.author }}</p>
+    </div>
+</div>
+```
+Now following webpage will visible on the website:
+
+Now, click on Article to view its details. Now the following webpage will visible :
 
 <br>
 
-<!----------------------------------------------------------------------------------------------------------------------------->
-**Date : 18-Feb-2022** 
-<h3 align='center'>Trying to fetch data from database using Jinja Templating</h3>
-- Write a Python Script for establish connection with Mariadb.
-- Still it gives permission error try to solve it.
+**Date: 18-Feb-2022**
 
+## Introduction to Selenium and Budibase
+
+Selenium is an open-source tool that automates web browsers. Selenium is browser automation tool by which you can create a script which automatically done task like fill credential and click for search.
+
+Budibase is a modern open-source development platform used for building, designing, automating, self-hosting, and shipping internal applications, including internal tools, admin panels, client portals, etc.
+
+It is a no-code or low-code platform that eliminates all the extra repetition by involving the essential elements that are required for connecting different forms, tables, views, and data sources. 
+<br>
 <br>
 
-<!----------------------------------------------------------------------------------------------------------------------------->
-**Date : 19-Feb-2022** 
-<h3 align='center'>Working with server</h3>
-- Resetting the password of server.
-- Trying to install Erpnext on server.
+**Date: 19-Feb-2022**
 
+## ERPNext Installation
+
+ERPNext is a free and open-source integrated Enterprise Resource Planning software developed by Frappe Technologies Pvt. Ltd. and is built on MariaDB database system using Frappe, a Python based server-side framework. ERPNext is a generic ERP software used by manufacturers, distributors and services companies.
+
+To install ERPNext, first we have to install frappe in our system. 
+After installing frappe, create a fresh site with the command: 
+
+`bench new-site site_name`
+
+This site will create new database so we have to give MySql Password here.
+
+Then install app in the system with the following command:
+
+`bench get-app erpnext --branch version-13`
+
+OR
+
+`bench get-app https://github.com/frappe/erpnext --branch version-13`
+
+With this, ERPNext version 13 will visible in apps folder of frappe directory.
+
+After creating site successfully, install the ERPNext on this site.
+Use the following command:
+
+`bench --site site_name install-app erpnext`
+`bench start`
+
+
+Now complete the setup wizard. Select your Region, Create first user etc.
+There will be many domains like Distribution, Retail, Education, Services, Agriculture, Healthcare etc. We have to work with Education so select only “Education” domain and continue the process. Then provide a company name and abbreviation. On the last screen, ERPNext will ask you what your company does, its bank name, the type of charts of accounts, and the fiscal year period. Fill the details and complete setup.
 <br>
 
 
