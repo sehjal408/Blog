@@ -360,7 +360,6 @@ When we made Article a web view, two html files were created namely: article.htm
 
 Write following code in article.html file:
 ```html
-{%  extends "templates/web.html" %}
 
 {% block page_content %}
 <div class="py-20 row">
