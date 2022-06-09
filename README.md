@@ -1046,3 +1046,32 @@ I have completed all my tasks that are assigned by sir. And Japreet was insertin
 
 After completion, we compare the Enrollment of Students and Instructors in erp. It has been found that after adding students to the programs and courses, that only those programs and courses are visible to the students, in which the enrollment has been done. But in the case of Instructors all the courses are visible and he/she is able to create/delete the content in all the programs and courses. We need to find the way with which only those courses should visible to instructor to whom he/she belongs. 
 <br>
+
+**Date: 4-April-2022**
+
+## User Permission for Instructors
+
+We were finding the solution for the task that instructor can only see their own assigned programs and courses . We can do it by the user permission list in which we can assign them a specific program. But it is only applicable in desk. After this instructor is able to see his own assigned programs in desk but on the lms all the programs are visible to the instructor. 
+
+For User Permission,
+
+1. Go to User, then User Permission list.
+2. Click on Add User Permission
+3. Select Email Id of Instructor in User field. 
+4. Select Program Doctype (for Program permission) or Course Doctype (for Course permission) in Allow field.
+5. Select Class or Course in field For Value.
+6. Click on Save.
+<br>
+
+**Date: 5-April-2022**
+
+## User Permission for Instructors through csv
+
+Now only those program and courses will visible to instructors for which we gave the user permissions. We can also create user permisisons in bulk for all instructors through csv file. 
+
+For bulk permissions,
+7. Go to User, then User Permission.
+8. Click on Import then Add Data Import.
+9. Then download template with all fields and create csv according to these fields.
+10. Then Attach file in Import File. Then click on Save then Start Import.
+<br>
