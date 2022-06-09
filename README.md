@@ -536,3 +536,64 @@ To add students,
 7. Now, student can set the password and login to the system.
 <br>
 
+**Date: 2-March-2022**
+
+## Import Data through csv file
+
+Today I learnt to import data in bulk through csv files. I insert students in bulk with the following steps:
+
+1. First of all, go to the student list.
+2. Click on Import then Add Data Import.
+3. Then the New Data Import form will open. Here, add the doctype "Student Applicant" in the Document Type field, and select "Insert New Record" in Import Type. Then save it.
+4. Then download the template with required fields like First name, Middle name, Last name, Email etc.
+5. Create the csv file of all students according to the fields in the downloaded template.
+6. Then Attach csv file in "Import File". Then click on "Save" then "Start Import".
+7. Here, if you find any error in fields then you can export the failed error logs, change it and upload it again.
+8. Now all students will be visible in the Student List.
+<br>
+
+**Date: 3-March-2022**
+
+## Mentor-Mentee Application on Frappe
+
+- We (I and Amandeep) have to create a new app in frappe framework i.e. Mentor-Mentee. 
+- In this, there should be some mentees and mentors. 
+- Details of mentees and mentors should be stored there. 
+- Each mentee should have a mentor. 
+- We should be able to assign mentors to the mentees. 
+- List of mentors and mentees should be visible on the webpage.
+- After clicking, webpage of their details should be opened.
+<br>
+
+**Date: 4-March-2022**
+
+## Create DocType and Enter Data
+
+We decided a flow of Mentor-Mentee application. First of all we created a new site in frappe with bench command. Then we create a new app named mentor_mentee. After creating successfully, we install the app on the site. 
+Then we decided to create following three doctypes :
+
+Mentor Doctype
+
+- Create a Mentor Doctype, details of mentors will be visible there. 
+- Go to doctype list, click on Add DocType. 
+- Enter name of Doctype as Mentor then select mentor_mentee in module field.
+- Enable Quick Entry check box.
+- Add the following fields in fields table:
+  - First Name: (Data, Mandatory) For first name of the mentor.
+  - Last Name: (Data) For last name of the mentor.
+  - Full Name: (Data, Read Only) We will define the function to compute full name from first and last name. So keep it read only.
+  - Address: (Data) For address of mentor.
+  - Phone: (Data) For phone number of mentor.
+  - Email: (Data, Unique) For email of mentor. Email should be unique.
+  - Code: (Data, Mandatory) This is code of teachers. It should also be unique.
+          
+- To compute full name, edit the mentor.py file as following:
+from frappe.website.website_generator import WebsiteGenerator
+```py
+class Mentor(WebsiteGenerator):
+	def before_save(self):
+		self.full_name=f'{self.first_name} {self.last_name or ""}'	
+```
+- Go to the mentor list and add data of some mentors.
+<br>
+
