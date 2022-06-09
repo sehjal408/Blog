@@ -687,6 +687,7 @@ Here are some delimiters that are used in the Jinja syntax:
 - Now, we have to show the details of students and mentors on webpage.
 - We have to write the jinja code for this.
 - Add the following code in mentee.html file:
+
 ```html
 {% raw %}
 {% block page_content %}
