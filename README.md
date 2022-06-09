@@ -728,6 +728,7 @@ Here are some delimiters that are used in the Jinja syntax:
 - We can select mentor from when we entering details of student.
 - So, we delete the Relation Doctype. And add field Mentor name in the Mentee DocType.
 - To show details of mentor and table of their mentees, write the following code in mentor.html file:
+
 ```html
 {% raw %}
 {% block page_content %}
@@ -783,6 +784,7 @@ Here are some delimiters that are used in the Jinja syntax:
 - Now we have to create a table of mentees and their assigned mentors on webpage.
 - For this we create a new html file in the www folder.
 - Then write the following code :
+
 ```html
 {% raw %}
 {% block page_content %}
