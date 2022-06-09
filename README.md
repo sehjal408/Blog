@@ -1169,3 +1169,23 @@ After the application is accepted we can enroll them in the programs by single-2
 
 After student section, we showed them the whole working of instructor how instructor can add content like articles, videos and quizzes in lms, mark the attendance of students etc. After Instructor we presented the HR module how to generate payrolls, salary slips, attendance of employees etc.
 <br>
+
+**Date: 16-April-2022**
+
+## ERP User vs LDAP User
+
+Sir assigned us the task to find the difference between ldap user and user created in erp.
+
+First we (me, aman) tried it by exporting a csv file of users with some data to check if there any field related to ldap. But there was no such field.
+
+Then In the meeting with Satinder sir, we tried to find the difference between a user created in erp and a user which is created by using ldap (Both users with same email) and we found that both are the same. So, we concluded that when we create any user with or without ldap, there is no difference.
+<br>
+
+**Date: 18-April-2022**
+
+## CRM Module
+
+CRM is Customer Relationsip Management. It helps us to track business Opportunities from Leads and Customers, send them Quotations, and book Sales Orders.
+
+I created a lead and users with permissions Sales Manager and Sales User. Then I found that the lead is visible to all, not only to sales users. But it should be visible to only sales users. Now, I am reading the document again and implementing it by assigning the lead to a particular sales user.
+<br>
