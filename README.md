@@ -26,7 +26,7 @@ Linux is an open-source operating system like other operating systems such as Mi
 
 ## Introduction to LAMP Stack
 
-A “LAMP” stack is a group of open-source software that is typically installed together to enable a server to host dynamic websites and web apps. LAMP consists of four components necessary to establish a fully functional web development environment. The first letters of the components' names make up the LAMP acronym:
+A “LAMP” stack is a group of open-source software that is typically installed together to enable a server to host dynamic websites and web apps. LAMP consists of four components necessary to establish a fully functional web development environment. The first letters of the components' names make up the LAMP acronym: 
 
 - Linux is an operating system used to run the rest of the components. 
 - Apache HTTP Server is a web server software used to serve static web pages. 
