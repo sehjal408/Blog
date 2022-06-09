@@ -1169,6 +1169,7 @@ After the application is accepted we can enroll them in the programs by single-2
 
 After student section, we showed them the whole working of instructor how instructor can add content like articles, videos and quizzes in lms, mark the attendance of students etc. After Instructor we presented the HR module how to generate payrolls, salary slips, attendance of employees etc.
 <br>
+<br>
 
 **Date: 16-April-2022**
 
@@ -1180,6 +1181,7 @@ First we (me, aman) tried it by exporting a csv file of users with some data to 
 
 Then In the meeting with Satinder sir, we tried to find the difference between a user created in erp and a user which is created by using ldap (Both users with same email) and we found that both are the same. So, we concluded that when we create any user with or without ldap, there is no difference.
 <br>
+<br>
 
 **Date: 18-April-2022**
 
@@ -1189,3 +1191,28 @@ CRM is Customer Relationsip Management. It helps us to track business Opportunit
 
 I created a lead and users with permissions Sales Manager and Sales User. Then I found that the lead is visible to all, not only to sales users. But it should be visible to only sales users. Now, I am reading the document again and implementing it by assigning the lead to a particular sales user.
 <br>
+
+**Date: 19-April-2022**
+
+## Lead Management in CRM
+
+A lead is a potential customer who might be interested in our products or services.
+
+To get the customer through the door, we may be doing all or any of the following:
+
+- Listing our product on directories. 
+- Maintaining an updated and searchable website. 
+- Meeting people at trade events. 
+- Advertising our products or services. 
+
+When we send out the word that we are around and have something valuable to offer, people will come in to check out our products. These are our Leads. They are called Leads because they may lead us to a sale.
+
+To create lead,
+
+1. Go to the Lead list and click on New. 
+2. If the person represents an organization, check the 'Lead is an Organization' checkbox. If the person is an individual, leave the checkbox unchecked.
+3. Enter the 'Email Address'. 
+4. Status is the important field in the Lead. You can set the status manually and also it will be updated automatically based on your actions against the lead. 
+5. You can set the Lead Source in Source field. 
+6. Enter email ID for communication. 
+7. Click on 'Save'. 
