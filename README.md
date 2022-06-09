@@ -597,3 +597,180 @@ class Mentor(WebsiteGenerator):
 - Go to the mentor list and add data of some mentors.
 <br>
 
+**Date: 5-March-2022**
+
+## Mentee Doctype
+
+- Create a Mentee DocType in which details of students will be stored.
+- Go to doctype list and click on Add DocType.
+- Enable Quick Entry check box.
+- Add the following fields in fields table:
+	- First Name: (Data, Mandatory) For first name of the student.
+	- Last Name: (Data) For last name of the student.
+	- Full Name: (Data, Read Only) We will define the function to compute full name from first and last name. So keep it read only.
+	- Roll No: (Int, Mandatory) For roll numbers of students. It will be integer.
+	- Address: (Data) For address of mentee.
+	- Phone: (Data) For phone number of mentee.
+	- Email: (Data, Unique) For email of mentee. Email should be unique.
+	- Image: (Data, Mandatory) This is for the image of students. It should also be unique.
+
+- To compute full name, edit the mentee.py file as following:
+from frappe.website.website_generator import WebsiteGenerator
+```py
+class Mentee(WebsiteGenerator):
+	def before_save(self):
+		self.full_name=f'{self.first_name} {self.last_name or ""}'
+```				
+- Go to the mentee list and add data of some mentees.
+<br>
+
+**Date: 7-March-2022**
+
+## Meeting App
+
+Today, Vishal and Pawandeep gave us presentation to all of us on Meeting App.
+
+- They showed us the structure of Meeting App.
+- They showed us how to create custom apps in erp and how to install it onto the site. 
+- I learned how to create parent and child doctypes and how to link child doctypes with parent doctypes.
+- We can plan meetings, and add details like meeting agenda, meeting
+time and its users and we can invite users by sending mails.
+<br>
+
+**Date: 8-March-2022**
+
+## Relation Doctype
+
+- We decided to create a more doctype which is for relation of mentors and mentees.
+- We want to select the mentor name from mentor list and mentee name from mentee list and create a relation of both.
+- Follow same steps to create doctype named Relation.
+- Add the following fields:
+	- Mentor: (Link, Mandatory) As we want to select mentors from mentor doctype so we will link this. Write Mentor in Options.
+	- Mentee: (Link, Mandatory) Here also we want to select mentees from mentee doctype so we will link this. Write Mentee in Options.
+- Go to Relation list and some relations of the mentor and mentees.
+- In Mentee and Mentor Doctype, write full_name in title field in View Settings. With this, when we select mentor and students, their full name will also be visible with their code or roll no.
+<br>
+
+**Date: 9-March-2022**
+
+## Webpage for list of Mentor and Mentee 
+
+- Now, we want to see the list of mentors and mentees on webpage.
+- After clicking a mentor or mentee, their detailed information should also be visible. 
+- To create webpage, go to the Mentor doctype then web view. 
+- Enable check boxes Has Web View and Allow Guest to View.
+- Add the Route field in the fields table and save the doctype.
+- Now two html files mentor.html and mentor_row.html will created in the templates directory of doctype.
+- Follow same steps for mentee doctype also.
+- In mentor_row.html and mentee_row.html files, replace code and roll_no with full_name respectively.
+- Now list will be visible on webpage.
+<br>
+
+**Date: 11-March-2022**
+
+## Introduction to Jinja Template
+
+Jinja is a fast, expressive, extensible templating engine. Special placeholders in the template allow writing code similar to Python syntax. Then the template is passed data to render the final document.
+A Jinja template is simply a text file. Jinja can generate any text-based format (HTML, XML, CSV, LaTeX, etc.). A Jinja template doesn’t need to have a specific extension: .html, .xml, or any other extension is just fine.
+A template contains variables and/or expressions, which get replaced with values when a template is rendered; and tags, which control the logic of the template. The template syntax is heavily inspired by Django and Python.
+Delimiters
+Here are some delimiters that are used in the Jinja syntax:
+- {% ... %} is used for statements. 
+- {{ ... }} is used for variables. 
+- {# ... #} is used for comments. 
+- #...## is used for line statements. 
+<br>
+
+**Date: 12-March-2022**
+
+## Fetching Data from another doctype on webpage
+
+- Now, we have to show the details of students and mentors on webpage.
+- We have to write the jinja code for this.
+- Add the following code in mentee.html file:
+```html
+{% raw %}
+{% block page_content %}
+
+<div class="py-20 row">
+    <div class="col-sm-2">
+        <img alt="{{ title }}" src="{{ image }}">
+    </div>
+
+    <div class="col">
+        <div><strong>Roll No: </strong>{{roll_no}}</div>
+        <div><strong>First Name: </strong>{{first_name}}</div>
+        <div><strong>Last Name: </strong>{{last_name}}</div>
+        <div><strong>Full Name: </strong>{{full_name}}</div>
+        <div><strong>Email: </strong>{{email}}</div>
+        <div><strong>Phone No: </strong>{{phone}}</div>
+        <div><strong>Address: </strong>{{address}}</div>
+        
+    </div>
+</div>
+
+{% endblock %}
+{% endraw %}
+```
+
+- Now students details will be visible on Mentee webpage.
+- We want to show the details of mentors on webpage and also there should be a table of menees that are assigned to the mentor.
+- To do this, we have to fetch data from mentee doctype on mentor’s webpage. 
+- We can use {% set students = frappe.get_all('Mentee',fields=['roll_no','full_name'], order_by='roll_no asc') %} query.
+- But it didn’t meet our requirements. So, we are finding another way.
+<br>
+
+**Date: 14-March-2022**
+
+## Detailed View of Mentor
+
+- After exploring, we found that there is no need of Relation DocType.
+- We can select mentor from when we entering details of student.
+- So, we delete the Relation Doctype. And add field Mentor name in the Mentee DocType.
+- To show details of mentor and table of their mentees, write the following code in mentor.html file:
+```html
+{% raw %}
+{% block page_content %}
+<div class="col">
+    
+    <div><strong>First Name: </strong>{{first_name}}</div>
+    <div><strong>Last Name: </strong>{{last_name}}</div>
+    <div><strong>Full Name: </strong>{{full_name}}</div>
+    <div><strong>Email: </strong>{{email}}</div>
+    <div><strong>Phone No: </strong>{{phone}}</div>
+    <div><strong>Code: </strong>{{code}}</div>
+    <div><strong>Students List:</strong></div>
+</div>
+<table class="table table-condensed table-hover table-bordered">
+    <tr>
+    <th class="text-center">Roll No</th>
+    <th class="text-center">Full Name</th>
+    <th class="text-center">Address</th>
+    <th class="text-center">Email</th>
+    <th class="text-center">Phone</th>
+    </tr>
+{% set students=frappe.get_all
+    ('Mentee',fields=['roll_no','full_name','mentor_name','mentor'], order_by='roll_no asc') %}
+
+{% for student in students %}
+
+{% if student.mentor==code %}
+
+<tr>
+<td style="width:10%; text-align:center;">{{student.roll_no}}</td>
+<td style="width:10%; text-align:center;">{{student.full_name}}</td>
+<td style="width:10%; text-align:center;">{{student.address}}</td>
+<td style="width:10%; text-align:center;">{{student.email}}</td>
+<td style="width:10%; text-align:center;">{{student.phone}}</td>
+</tr>
+
+{% endif %}
+{% endfor %}
+
+</table>
+
+{% endblock %}
+{% endraw %}
+```
+
+- Now, we created the links of Student and Mentor list on navigation bar of website.
