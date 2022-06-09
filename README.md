@@ -713,7 +713,7 @@ Here are some delimiters that are used in the Jinja syntax:
 - Now students details will be visible on Mentee webpage.
 - We want to show the details of mentors on webpage and also there should be a table of menees that are assigned to the mentor.
 - To do this, we have to fetch data from mentee doctype on mentor’s webpage. 
-- We can use `{% set students = frappe.get_all('Mentee',fields=['roll_no','full_name'], order_by='roll_no asc') %}` query.
+- We can use set query.
 - But it didn’t meet our requirements. So, we are finding another way.
 <br>
 
