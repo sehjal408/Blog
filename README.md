@@ -1142,6 +1142,7 @@ This allows institutes to publish their programs on their website. Programs can 
 LMS is disabled by default and can be enabled from Education Settings.
 To enable LMS we first go to education module then click the settings and open education settings. Here, there is a checkbox using which the LMS can be enabled. The portal is hosted on the /lms route. Here all the programs are shown in the form of cards. Each card is clickable and navigates to the corresponding program/course/topic/content. 
 <br>
+<br>
 
 **Date: 13-April-2022**
 
@@ -1156,3 +1157,15 @@ To enable LMS we first go to education module then click the settings and open e
 - For each of the courses in a particular program, we can set a course intro and a course hero image to be used on the portal. There is a table to add topics too, these topics will be displayed on the LMS to all enrolled students.
 
 - Similar to the course, Topic has a table where we can add the content. We can add three different types of content viz. Video, Article and a Quiz.
+<br>
+
+**Date : 15-April-2022**
+
+## Presentation of Nankana Sahib Public School Project
+
+Today we had a meeting with Satinder Sir and a teacher from Nankana Sahib Public School. In today's meetings we all presented what we have done till now. We showed them the whole workflow to add a student. For which first we need to add a student applicant and explained that there are two methods for this one is online by using web form and another is offline.
+
+After the application is accepted we can enroll them in the programs by single-2 enrollment of every student or by using the program enrollment tool and we showed them the lms interface of student how student is going to access the programs and courses and quizzes. 
+
+After student section, we showed them the whole working of instructor how instructor can add content like articles, videos and quizzes in lms, mark the attendance of students etc. After Instructor we presented the HR module how to generate payrolls, salary slips, attendance of employees etc.
+<br>
