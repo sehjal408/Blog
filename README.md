@@ -1070,8 +1070,27 @@ For User Permission,
 Now only those program and courses will visible to instructors for which we gave the user permissions. We can also create user permisisons in bulk for all instructors through csv file. 
 
 For bulk permissions,
-7. Go to User, then User Permission.
-8. Click on Import then Add Data Import.
-9. Then download template with all fields and create csv according to these fields.
-10. Then Attach file in Import File. Then click on Save then Start Import.
+1. Go to User, then User Permission.
+2. Click on Import then Add Data Import.
+3. Then download template with all fields and create csv according to these fields.
+4. Then Attach file in Import File. Then click on Save then Start Import.
+<br>
+
+**Date: 6-April-2022**
+
+## Reading Files for Filters
+
+My task was to add filters on a webpage so that we can search and sort the data on the webpage.
+I am doing this task by reading the python files and understanding the concepts of desk filters.
+
+After exploring I found that there is a global search which we have to enable for webpages. First go to Website, then Website Settings. Check Navbar Section, here we have to enable the checkbox “Include Search in Top Bar”. Now Search Filter will visible on our webpage.
+<br>
+
+**Date: 7-April-2022**
+
+## Pagination on Webpage
+
+When we give web view to a doctype, then list is visible on webpage. If there are more than 20 rows in the list then, firstly only 20 will visible on webpage and a “More” button at bottom will also show. Rest of the entries will visble after clicking on More button. 
+
+But our need is to apply pagination with Previous and Next buttons. I am reading documentation of frappe and exploring a way to do this. 
 <br>
