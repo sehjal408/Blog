@@ -157,6 +157,7 @@ A DocType not only stores fields, but also other information about how your data
 
 Before we can create DocTypes, we need to enable developer mode on with command: `bench set-config -g developer_mode true`. This will enable boilerplate creation when we create doctypes and we can track them into version control with our app.
 <br>
+<br>
 
 **Date: 12-Feb-2022**
 
@@ -182,6 +183,7 @@ Our doctype is created and we can now Add data to our doctype. Now We can go to 
 
 Here it will show all the database of a perticluar site. And we can check and update our data using differnet sql commands by selecting differnet databasea and tables.
 <br>
+<br>
 
 **Date: 14-Feb-2022**
 
@@ -199,7 +201,7 @@ Create “Library Member” Doctype with following fields.
 
 Write code in python controller class such that Full Name is computed automatically from First Name and Last Name. Make the following changes in library_member.py :
 
-```
+```py
 class LibraryMember(Document):
      #this method will run every time a document is saved
        def before_save(self):
@@ -220,7 +222,7 @@ Make this doctype a Submittable doctype. A Submittable doctype can have 3 states
 
 Write the following code in library_membership.py that will make sure whenever a Library Membership is created, there is no active membership for the Member.
 
-```
+```py
 from __future__ import unicode_literals
 
 import frappe
@@ -447,25 +449,92 @@ Use the following command:
 Now complete the setup wizard. Select your Region, Create first user etc.
 There will be many domains like Distribution, Retail, Education, Services, Agriculture, Healthcare etc. We have to work with Education so select only “Education” domain and continue the process. Then provide a company name and abbreviation. On the last screen, ERPNext will ask you what your company does, its bank name, the type of charts of accounts, and the fiscal year period. Fill the details and complete setup.
 <br>
-
-
-
-<!----------------------------------------------------------------------------------------------------------------------------->
-**Date : 23-Feb-2022** 
-<h3 align='center'>How to use ssh</h3>
-- Login to Server, Try to help other member to install ldap on server.
-- Apply different permission related queries on database for different user.
-
 <br>
 
+**Date: 21-Feb-2022**
 
+## Introduction to TMUX and MOSH
 
-<!----------------------------------------------------------------------------------------------------------------------------->
-**Date : 07-Apr-2022** 
-<h3 align='center'>Pagination on webpage in Library Management System</h3>
-Firstly, i had created a library management system which had 5 doctypes. I gave web view to Article doctype. Then two files article_row.html and article.html were automatically generated in doctype folder. On webpageof Article doctype, whole list of articles was visible. But we wanted to apply pagination on the webpage. So i tried from a video (url: https://youtu.be/rDC-5ZJTmOU ). 
-I created a file utils.py in library_management folder where i write the function of pagination for showing 4 articles on single page. 
-Then in video, two files python and html were created in www > Article folder. I did the same but it didn't worked for me. After trying many ways, i created these files directly in www folder, then it worked. In python file, pagination function was called. And in html file i write jinja code to display the list on webpage and applied "previous" and "next" buttons. 
-Now 4 articles are visible on webpage and previous, next buttons are working fine.
-
+Today we got to know two new tools which are really very helpful for the coders which are TMUX and MOSH. 
+- Mosh: Mosh is free and command-line software that is used to connect from a client computer to a server over the Internet to run a remote terminal. Mosh is more intelligent than SSH. While the SSH client waits for a TCP response from the server before showing your typing, Mosh will display your typing in real-time and even give underlined typing predictions. The mosh program will SSH to user@host to establish the connection. As you know, SSH may prompt the user for a password or use public-key authentication to log in. But mosh runs the mosh-server process (as the user) on the server machine. Mosh will run inside your Terminals such as xterm, gnome-terminal, urxvt, Terminal.app, iTerm, emacs, screen, or tmux. 
+- Tmux: Tmux is a Linux application that allows multitasking in a terminal window. It stands for Terminal Multiplexing, and is based around sessions. Users can start a process, switch to a new one, detach from a running process, and reattach to a running process.
 <br>
+
+**Date: 22-Feb-2022**
+
+## Introduction to Github Pages
+
+- Create a New Repository on GitHub. 
+- Setting Repository as the main branch and setting a theme for GitHub pages. 
+- Learning about Personal access tokens for push Local Repository on GitHub. 
+- Learning Syntax of Markdown Language in GitHub. 
+<br>
+
+**Date: 23-Feb-2022**
+
+## Comparison between ERPNext Version 12 and Version 13
+
+Install ERPNext Version 12 and 13. Then compare both the versions.
+The major difference is the UI interaction. In ERPNext 13 the UI design is very user friendly as compared to ERPNext 12 version,
+
+- In the 13 version , we have access to different themes well , this feature is not available in the 12 version. 
+- In ERPnext 12 version we have to manually set up the domains which is time consuming while on the other hand in 13 version it give us pre-processed domains with very clean UI which makes it simpler. 
+- In version 13 while setting up it automatically created a blog/webpage for the user and in version 12 this is missing or we can manually create it . 
+<br>
+
+**Date: 24-Feb-2022**
+
+## Education Domain in ERPNext
+
+Sir assigned the task to explore the Education Domain of ERPNext. So I am reading the documentation and trying to understand it and implementing it on my localhost. 
+
+The ERPNext Education Module helps to organizing your entire set-up. You can have your entire Student Database, Fee Structure, Staffing Information, Courses, Curriculum Which we used for the Project Nanakana Sahib Public School and Guru Nanak Dev Engineering College Ludhiana.
+
+Using Education module of ERPNext, you can effectively manage operations like:
+- Managing Student 
+- Program and Courses 
+- Publishing Programs on the portal 
+- Online Admissions 
+- Student Attendance 
+- Course Scheduling 
+- Portal for Publishing Programs 
+- Assessment Planning and Assessment Result 
+- Fee Structure and Fee Receipt 
+<br>
+
+**Date: 25-Feb-2022**
+
+## Modules in Education Domain
+
+I am reading documentation of ERPNext Education Domain and understanding the concepts.
+
+There are different modules under Education Domain. 
+
+- **Student:** There is record of all the students like student detail, guardian detail, student group, batch etc.
+- **Admission:** It keep track of admissions of students.
+- **Fees:** It keep track of fees, due date, pending fee etc of student.
+- **Learning Management System:** In this, the progress of individual students can be tracked through ERPNext as well as the portal.
+- **Attendance:** There is record of attendance of all the students. 
+- **Assessment:** It keep track of student progress, assessment result, schedule etc.
+- **HR:** It keeps record of all employees and instrutors of school or college.
+- **Website:** In this, we can make beautiful website, webpages, blog, themes, homepage etc for our school/college
+<br>
+
+**Date: 28-Feb-2022**
+
+## Setting Up ErpNext for School
+
+First we setup the parent Company with all the details and under that parent company we setup our school which further related to courses, program, room, student category etc. then our team divided the work for different modules.
+
+I create Academic Year, Academic Term, students etc for school. 
+
+To add students, 
+1. Go to Education > Student.
+2. Click on Add student.
+3. Enter details of student.
+4. If student is already user of erp then select User Id, otherwise enter the email of student.
+5. A user of same email will be created in User list.
+6. After saving, email will be sent to the provided email of student.
+7. Now, student can set the password and login to the system.
+<br>
+
