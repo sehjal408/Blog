@@ -957,6 +957,7 @@ A Letter Head contains your organization's name, logo, address, etc which appear
 **Default Finance Book:**
 A Finance Book is a book against which all the accounting entries are booked. You can have multiple finance books. For example, one book for tax authorities and another for stockholders. This is useful if you have to report depreciation and other values in different ways based on regulatory requirements.
 <br>
+<br>
 
 **Date: 26-March-2022**
 
@@ -967,6 +968,7 @@ Today, We got student, instructor, classes data from Nankana Sahib Pubic School.
 Before uploading students, we have to create programs and courses. So I helped Aman in creating Programs and Courses.
 
 Then I start arranging data of students in csv file. All team members helped me in arranging data because there were arount 3000 students. 
+<br>
 <br>
 
 **Date: 28-March-2022**
