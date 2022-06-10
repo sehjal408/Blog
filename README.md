@@ -1227,3 +1227,15 @@ To create lead,
 - On click edit we need check option In List View, In Standard Filter. 
 - Then on save changes filters are available on desk list-view of doctype. 
 <br>
+
+**Date: 21-April-2022**
+
+## Introduction to Kimai
+- Kimai is a free & open source timetracker. It tracks work time and prints out a summary of your activities on demand. Yearly, monthly, daily, by customer, by project 
+- With Kimai, the boring process of feeding Excel spreadsheets with your working hours is simplified.
+- Kimai does not have to run while recording, you can even quit your browser. Your time is still recording until you stop it from any web browser that has access to your installation. 
+- It is designed to hold lots of users, but you can also use it for a single user if you want to. 
+- Its simplicity is its strength. Due to Kimai’s browser based interface it runs cross-platform, even on your mobile device. 
+- Kimai can be used by as many users as you want: each installation supports unlimited users with different roles.
+- Teams can be created to group your users into logical groups like departments or project related peer-groups. Customers and projects can be assigned to those teams, which will limit visibility and access for other users.
+<br>
