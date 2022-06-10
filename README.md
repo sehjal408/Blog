@@ -1191,6 +1191,7 @@ CRM is Customer Relationsip Management. It helps us to track business Opportunit
 
 I created a lead and users with permissions Sales Manager and Sales User. Then I found that the lead is visible to all, not only to sales users. But it should be visible to only sales users. Now, I am reading the document again and implementing it by assigning the lead to a particular sales user.
 <br>
+<br>
 
 **Date: 19-April-2022**
 
@@ -1216,3 +1217,13 @@ To create lead,
 5. You can set the Lead Source in Source field. 
 6. Enter email ID for communication. 
 7. Click on 'Save'. 
+<br>
+
+**Date: 20-April-2022**
+
+## Adding Filters on doctype as per requirement
+- As per requirement changes for achieve this we add filter in list-view like class-wise, subject-wise, date-wise filter. 
+- For creating filters on desk we need to go to Doctype. 
+- On click edit we need check option In List View, In Standard Filter. 
+- Then on save changes filters are available on desk list-view of doctype. 
+<br>
