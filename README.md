@@ -1277,3 +1277,18 @@ Sir assigned us (Me, Vishal) the task to create Notice Board Application with fo
 	- Department: (Link) This is linked with department. Department of CLERK, who is creating notice will be fetched here.
 	- Date: (Read Only) This is date of the day notice is created.
 <br>
+
+**Date: 26-April-2022**
+
+## Workflow for Notice Board App
+
+- As we want that Clerk will create notice and HOD will approve, reject or reassign it. 
+- So we created two roles: HOD and Clerk in the Role list and gave them required permissions for Notices like to create, view, delete the notice.
+- Then we created a workflow named “Notice” for the doctype.
+- Here we define states like Draft, Approves, Pending etc. 
+- Then we created Transition Rules like first Clerk will create a notice, after approved by clerk it will go to HOD then HOD will approve it or reassign it to Clerk.
+- If HOD reassigns it then it will go to Clerk in Draft state, here clerk can edit it and resend it to HOD.
+- If HOD wants to reject it, then first he needs to click on Pending then he can reject it, after rejecting by HOD it will go to the Clerk and the clerk can delete it.
+- Every thing Works fine but when we apply some code then workflow states create problem. eg data is saved but changes apply with delay. 
+- So we decide to work without workflow also learn new things from mistakes.
+<br>
