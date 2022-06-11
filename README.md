@@ -1248,3 +1248,18 @@ To create lead,
 - Prerequisites for kimai are git, composer, apache2, php.
 - First, I install all these then follow the steps to install kimai.
 <br>
+
+**Date: 23-April-2022**
+
+## New Specifications for Notice Board App
+
+Sir assigned us (Me, Vishal) the task to create Notice Board Application with following requirements:-
+
+- Notice should be created by CLERK then it should be in the draft state. 
+- Only CLERK and HOD should be able to create notice.
+- Only CLERK and HOD can create notice for their department, no one else from other department should be able to create notice for their department.
+- Another requirement when notice is created by clerk It will be in Draft state when Hod Submit Notice only then it would be published. 
+- Naming Series of notice maintained department wise eg: Notice-CSE/2022/00001, Notice-CIVIL/2022/00001. 
+- If HOD Cancel the notice then Clerk is able to make changes then again send it to HOD. 
+<br>
+
