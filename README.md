@@ -1292,3 +1292,15 @@ Sir assigned us (Me, Vishal) the task to create Notice Board Application with fo
 - Every thing Works fine but when we apply some code then workflow states create problem. eg data is saved but changes apply with delay. 
 - So we decide to work without workflow also learn new things from mistakes.
 <br>
+
+**Date: 27-April-2022**
+
+## Department wise Naming Series
+
+- Assigning department to Hod & Clerk to one department in User Permission List. 
+- We use condition like cse = department_name. 
+- Department_name is fetched from doctype use function self.fieldname. 
+- After apply such condition we use make_autoname function. 
+- self.name = make_autoname('NOTICE-'+'CSE'+'/'+'.YYYY.'+'/'+'.#####') 
+- This function return series 'NOTICE-CSE/2022/00001' 
+
