@@ -1263,3 +1263,17 @@ Sir assigned us (Me, Vishal) the task to create Notice Board Application with fo
 - If HOD Cancel the notice then Clerk is able to make changes then again send it to HOD. 
 <br>
 
+**Date: 25-April-2022**
+
+## Creating doctype for Notice Board App
+
+- In First approach we decide to create doctype and apply workflow on it. 
+- So we created a doctype with following fields: 
+	- Title: (Data, Mandatory) This is for the title of the Notice.
+	- Content: (Text Editor, Mandatory) This is for the content of the Notice.
+	- Attachment: (Attach) This is to attach any pdf or image etc.
+	- Signature: (Signature/Image) This is for signature of HOD. 
+	- Status: (Select) There are options of status like Draft, Created by Clerk, Approved by HOD, Rejected, Pending, Published etc. This will be used in workflow.
+	- Department: (Link) This is linked with department. Department of CLERK, who is creating notice will be fetched here.
+	- Date: (Read Only) This is date of the day notice is created.
+<br>
