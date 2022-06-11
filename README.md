@@ -1239,3 +1239,12 @@ To create lead,
 - Kimai can be used by as many users as you want: each installation supports unlimited users with different roles.
 - Teams can be created to group your users into logical groups like departments or project related peer-groups. Customers and projects can be assigned to those teams, which will limit visibility and access for other users.
 <br>
+
+**Date: 22-April-2022**
+
+## Installation of Kimai
+
+- I installed kimai from https://github.com/kevinpapst/kimai2.git
+- Prerequisites for kimai are git, composer, apache2, php.
+- First, I install all these then follow the steps to install kimai.
+<br>
