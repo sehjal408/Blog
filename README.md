@@ -1303,4 +1303,31 @@ Sir assigned us (Me, Vishal) the task to create Notice Board Application with fo
 - After apply such condition we use make_autoname function. 
 - self.name = make_autoname('NOTICE-'+'CSE'+'/'+'.YYYY.'+'/'+'.#####') 
 - This function return series 'NOTICE-CSE/2022/00001' 
+<br>
+
+**Date: 28-April-2022**
+
+## Fetching HOD by using variables in query
+
+- First we use Simple Frappe query "frappe.db.get_value('User', 'hodcse@gmail.com', 'full_name')". 
+- But this depends upon the email of hod if email will change in future then we need to change it. 
+- Also we have to wrote this many times. 
+- So we use another optimized version of query. 
+
+```py
+department = self.department
+requiredRole = "Hod" 
+                
+                self.hod = frappe.db.sql(f""" select full_name 
+                        from `tabUser` 
+                        where `email` IN (select user 
+                        from `tabUser Permission` 
+                        where `for_value`="{department}" AND `user` IN (select parent 
+                        from `tabHas Role` 
+                        where `role`="{requiredRole}" )) """)
+			
+```
+- By using this query with variable we are able to use this for all departments. 
+<br>
+
 
