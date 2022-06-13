@@ -1330,4 +1330,28 @@ requiredRole = "Hod"
 - By using this query with variable we are able to use this for all departments. 
 <br>
 
+**Date: 29-April-2022**
 
+## Try to optimize Notice.py Code
+
+- As we use department for naming series so for this we have to change code when department and its abbrivation changed. 
+- To Remove this we add department abbrivation field in doctype. 
+- With following query abbr depends upon the department abbrivation also we haven't make changes in code also code become more simple than previous code. 
+
+```py
+department=self.department
+abbr=frappe.db.get_value( 'Department' , department ,'department_abbreviation' )
+self.name=make_autoname( 'NOTICE-' + abbr + '/' + '.YYYY.' + '/' + '.#####' )
+```
+<br>
+
+**Date: 30-April-2022**
+
+## Hierarchy of Nankana Sahib Education Trust
+
+Today we have discussed the hierarchy and structure of Nanakana Sahib Education Trust, GNDEC, NSPS.
+- **Basic Structure:** First we have a parent company Nankana Sahib Education Trust and under these we have child companies Guru Nanak Dev Engineering College, Nankana Sahib Public School (21 branches), Guru Nanak Dev Polytechnic College, ITI.
+- **Accounts Structure:** First we have a parent company NSET and it has a bank account which will take care of all the accounts of child companies. Under the parent company we have a child company GNDEC which also has a fee account and a salary account all the tuition fee of students will directly go to the fee bank account , and all the amount of fee bank account will be transferred to the salary account and all the employees will get their salaries from the salary account. All the development fee will be directly transferred to the development account. For the development, company will get the amount/fund from the development account.
+- **Roles in NSET:** In the Nankana Sahib Education Trust we have president , director, managerial staff and under the president we have sub roles for other users, secretary, and trustees. And under the managerial staff we have clerks and accountant. Only the received amounts and all benefits should be visible to the instructor. Only the accounts part should be visible to the director. Clerk is responsible for all the inventories stocks. Clerk2 will be responsible for the hostellers fee. And they should be able to see only their assigned company details.
+- **NSET:** In NSET company we have a director role which should have access to all the child companies. All the child companies GNDEC, NSPS have a principal. After that other staff is divided into two sections one is Non-teaching and other is teaching. Under the non-teaching staff we have clerks, accountants, assistants and other staff. Teaching section is further divided into Examination, student section(admissions etc), Establishment, Department. The examination staff will take care of examinations of companies, the student section will take care of the students admissions, fees etc.In the departments we have the role of HOD, section incharge, staff.
+<br>
