@@ -1405,3 +1405,16 @@ Today, We created Director user of NSET, Superintendent of NSET, Principal user 
 - Creating Superintendent role and gave all permissions to this role.
 - Creating HR role and add permissions for employee and instructors.
 <br>
+
+**Date: 5-May-2022**
+
+## Creating Presentation with Other Team-mates in Reveal.JS
+
+- Review all work which is done by us. 
+- Creating presentation for the whole project so that we can present our work to the trusties of trust.
+- Add all Salary Components required. 
+- Add how Desk is visible for different Roles. 
+- What is visible to all student. 
+- What is visible to all instructors, director, principle etc.
+- Explaing other modules like Accounts, Assets, Payroll, Human Resource, Education Domain. 
+<br>
