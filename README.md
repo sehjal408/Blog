@@ -1440,3 +1440,20 @@ Today, We created Director user of NSET, Superintendent of NSET, Principal user 
 - Write basic hello world program and render it using jinja templating. 
 <br>
 
+**Date : 10-May-2022**
+
+## Showing detail in html file using jinja
+
+- Creating a templates folder inside flask app where all the html files put together.
+- Make a funtion in which we put query select Mentor name from mentor table. 
+- Then render template with data and file name in which template is shown.
+```
+@app.route('/')
+def example():
+    cur.execute("SELECT Name FROM Mentor")
+    data = cur.fetchall()
+    return render_template('index.html', output = data)
+```
+- cur.execute is used for query and cur.fetchall() fetch all names from mentor table. 
+- And at the end funtion return render template in which filename, and assign data to output variable. 
+<br>
