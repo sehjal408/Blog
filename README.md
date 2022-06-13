@@ -1418,3 +1418,13 @@ Today, We created Director user of NSET, Superintendent of NSET, Principal user 
 - What is visible to all instructors, director, principle etc.
 - Explaing other modules like Accounts, Assets, Payroll, Human Resource, Education Domain. 
 <br>
+
+**Date: 6-May-2022**
+
+## Working on Mentor-Mentee Task without erp
+
+- Creating new database with three tables Mentor, Mentee & Relation. 
+- Import data in these tables using csv files through terminal. 
+- Make connection of database with python file. 
+<br>
+
