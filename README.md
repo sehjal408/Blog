@@ -1378,6 +1378,7 @@ Today we have discussed the hierarchy and structure of Nanakana Sahib Education 
 
 **Instructors:-** will have access to student attendance, quiz, videos, article, Diary, Student list etc
 <br>
+<br>
 
 **Date: 3-May-2022**
 
@@ -1391,4 +1392,16 @@ We need to generate all the reports and graphs for necessary information for eac
 
 **Inventory Management**
 Today, We created Director user of NSET, Superintendent of NSET, Principal user of NSPS and HR user of NSPS on erp server and gave them all the required permissions. And same roles are created on gne11.GNE. Also we learn about Salary Structure and Salary Component of employees. In meeting with Harpreet sir, we learn about PF, Taxes, Funds, Earnings and Deductions etc. 
+<br>
+
+**Date: 4-May-2022**
+
+## Creating Roles and permissions
+
+- Creating Director Role and add permission for Viewing accounts, payroll, Employee details, all reports etc. 
+- Customize Deskview for Director Role. 
+- Creating Principal Role and add all academic views for Principal. 
+- Creating Instructor Role and allow all permissions needed to do their tasks. 
+- Creating Superintendent role and gave all permissions to this role.
+- Creating HR role and add permissions for employee and instructors.
 <br>
