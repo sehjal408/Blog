@@ -1355,3 +1355,32 @@ Today we have discussed the hierarchy and structure of Nanakana Sahib Education 
 - **Roles in NSET:** In the Nankana Sahib Education Trust we have president , director, managerial staff and under the president we have sub roles for other users, secretary, and trustees. And under the managerial staff we have clerks and accountant. Only the received amounts and all benefits should be visible to the instructor. Only the accounts part should be visible to the director. Clerk is responsible for all the inventories stocks. Clerk2 will be responsible for the hostellers fee. And they should be able to see only their assigned company details.
 - **NSET:** In NSET company we have a director role which should have access to all the child companies. All the child companies GNDEC, NSPS have a principal. After that other staff is divided into two sections one is Non-teaching and other is teaching. Under the non-teaching staff we have clerks, accountants, assistants and other staff. Teaching section is further divided into Examination, student section(admissions etc), Establishment, Department. The examination staff will take care of examinations of companies, the student section will take care of the students admissions, fees etc.In the departments we have the role of HOD, section incharge, staff.
 <br>
+
+**Date: 2-May-2022**
+
+## Hackathon day 1
+
+**Roles and flow for Parent Comapany:-**
+
+**Director:-** Director will have all permissions like fees, salary, accounts , total gain etc but with read only access.
+**Accountant:-** will have permissions to see all the account information of Trust, NSPS, GNDEC. Accountant will have read, write access to create the fee and salaries of the employee and also can create the fee report and salary report.
+**HR:-** HR will have permission to create the users and make them employees, leave allocation, holiday list, salary of employee. Superintendent Roles and flow for Child Comapany:-
+**Principal:-** Will have only read only access to all the education domain related information and HR related information.
+**Accountants:-** 1 For students fee and 1 for salaries of employees. 
+**Teaching Incharge:-** Will do all the tasks of academic user like course scheduling etc.
+**HR:-** will create employees and instructors only for Nankana sahib Public School, leave allocation, salary of employees etc. We need to show all the reports like employees attendance report, salary report, leave report etc to the HR..
+**Instructors:-** will have access to student attendance, quiz, videos, article, Diary, Student list etc
+<br>
+
+**Date: 3-May-2022**
+
+## Hackathon day 2
+
+**Students:-** will have access of only LMS and on lms they will have access of programs, Courses, Quizzes, Videos, Articles, daily diary and attendance.
+**Accountant:-** will create the salaries of employees and fees of students, will generate the balance sheet.
+
+We need to generate all the reports and graphs for necessary information for each role.
+
+**Inventory Management**
+Today, We created Director user of NSET, Superintendent of NSET, Principal user of NSPS and HR user of NSPS on erp server and gave them all the required permissions. And same roles are created on gne11.GNE. Also we learn about Salary Structure and Salary Component of employees. In meeting with Harpreet sir, we learn about PF, Taxes, Funds, Earnings and Deductions etc. 
+<br>
