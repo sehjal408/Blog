@@ -1457,3 +1457,14 @@ def example():
 - cur.execute is used for query and cur.fetchall() fetch all names from mentor table. 
 - And at the end funtion return render template in which filename, and assign data to output variable. 
 <br>
+
+**Date: 11-May-2022**
+
+## Company NSPS in Student DocType
+
+- There is a company(School name in our case) field in Student Applicant Doctype. 
+- A user of same company can see the student applicants in the list.
+- But there is no company field in the Student Doctype. So all students of other schools are also visible in student list.
+- I tried by giving User Permission of company to users. But did not worked.
+- After exploring, I found the solution. To view students school wise, we have to customize the company field in Student DocType.
+-  With this, User of Child Company (like Nankana Sahib Public School or Guru Nanak Dev Engineering College) can see the students of this company only. And user of Parent Company (like Nankana Sahib Education Trust) can see the students of all child companies by applying filters.
