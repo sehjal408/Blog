@@ -1363,12 +1363,19 @@ Today we have discussed the hierarchy and structure of Nanakana Sahib Education 
 **Roles and flow for Parent Comapany:-**
 
 **Director:-** Director will have all permissions like fees, salary, accounts , total gain etc but with read only access.
+
 **Accountant:-** will have permissions to see all the account information of Trust, NSPS, GNDEC. Accountant will have read, write access to create the fee and salaries of the employee and also can create the fee report and salary report.
-**HR:-** HR will have permission to create the users and make them employees, leave allocation, holiday list, salary of employee. Superintendent Roles and flow for Child Comapany:-
+
+**HR:-** HR will have permission to create the users and make them employees, leave allocation, holiday list, salary of employee.
+
 **Principal:-** Will have only read only access to all the education domain related information and HR related information.
+
 **Accountants:-** 1 For students fee and 1 for salaries of employees. 
+
 **Teaching Incharge:-** Will do all the tasks of academic user like course scheduling etc.
+
 **HR:-** will create employees and instructors only for Nankana sahib Public School, leave allocation, salary of employees etc. We need to show all the reports like employees attendance report, salary report, leave report etc to the HR..
+
 **Instructors:-** will have access to student attendance, quiz, videos, article, Diary, Student list etc
 <br>
 
@@ -1377,6 +1384,7 @@ Today we have discussed the hierarchy and structure of Nanakana Sahib Education 
 ## Hackathon day 2
 
 **Students:-** will have access of only LMS and on lms they will have access of programs, Courses, Quizzes, Videos, Articles, daily diary and attendance.
+
 **Accountant:-** will create the salaries of employees and fees of students, will generate the balance sheet.
 
 We need to generate all the reports and graphs for necessary information for each role.
