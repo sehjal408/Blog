@@ -1468,3 +1468,17 @@ def example():
 - I tried by giving User Permission of company to users. But did not worked.
 - After exploring, I found the solution. To view students school wise, we have to customize the company field in Student DocType.
 -  With this, User of Child Company (like Nankana Sahib Public School or Guru Nanak Dev Engineering College) can see the students of this company only. And user of Parent Company (like Nankana Sahib Education Trust) can see the students of all child companies by applying filters.
+<br>
+
+**Date: 12-May-2022**
+
+## Introduction to Stock 
+
+The Stock or Inventory module in ERPNext helps us to:
+
+- Maintain details of your products and warehouses. 
+- Track receipt, transfer and delivery of the products. 
+- Optimize stock levels by providing real-time information via reports. 
+- Provide valuation of each product. 
+    
+The Stock module is tightly integrated with Purchase, Manufacturing and Accounting modules. Businesses have a large part of their financial resources invested in the stock items they trade. With ERP, we can always keep a bird's eye view on our stock availability, replenishment, procurement, sales, and much more.
