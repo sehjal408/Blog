@@ -1393,6 +1393,7 @@ We need to generate all the reports and graphs for necessary information for eac
 **Inventory Management**
 Today, We created Director user of NSET, Superintendent of NSET, Principal user of NSPS and HR user of NSPS on erp server and gave them all the required permissions. And same roles are created on gne11.GNE. Also we learn about Salary Structure and Salary Component of employees. In meeting with Harpreet sir, we learn about PF, Taxes, Funds, Earnings and Deductions etc. 
 <br>
+<br>
 
 **Date: 4-May-2022**
 
@@ -1426,5 +1427,16 @@ Today, We created Director user of NSET, Superintendent of NSET, Principal user 
 - Creating new database with three tables Mentor, Mentee & Relation. 
 - Import data in these tables using csv files through terminal. 
 - Make connection of database with python file. 
+<br>
+
+**Date : 7-May-2022**
+
+## Install and use Flask
+
+- As we need to show detail on webpage using jinja templating. 
+- After few searches we decide to use flask as a framework which render jinja template for html file. 
+- Again Make connection with database, but this time as adviced by teacher, we need to hide credential from public so that we push it on git. 
+- For hiding credentials we load details from another python file. 
+- Write basic hello world program and render it using jinja templating. 
 <br>
 
