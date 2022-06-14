@@ -1496,6 +1496,7 @@ There are three main types of entries:
 
 Apart from these core transactions, there are other documents available in ERPNext Stock module to manage Stock Reconciliation, Item Prices, deliveries, serial numbers, batch numbers, quality inspections, returns, etc.
 <br>
+<br>
 
 **Date: 14-May-2022**
 
@@ -1521,4 +1522,31 @@ An Item is a product or a service offered by the company. Following are the step
 2. Click on Add Item. 
 3. Keep the “Maintain Stock” field checked. 
 4. Save (After saving, Stock Entry, Stock Ledger, Accounting Ledger will be created automatically.) 
+<br>
+
+**Date: 16-May-2022**
+
+## Warehouse for Stock
+
+A warehouse is a commercial building for storage of goods. Warehouses are used by manufacturers, importers, exporters, wholesalers, transport businesses, customs, etc. Following are steps to create warehouse:-
+
+1. Go to the Warehouse list, click on New. 
+2. Enter a name for the Warehouse. 
+3. Set/check the Parent Warehouse. If you tick on 'Is Group', you can create sub-Warehouses under this group Warehouse. 
+4. Save. 
+
+We can set a default account for all transactions with this warehouse. After saving a Warehouse, you'll see the following options:
+
+- Stock Balance: This will open the Stock Balance report to display the quantity, valuation, balance, etc. 
+- General Ledger: This will open the General Ledger to display the accounting transactions.
+- Non-Group to Group: If the Warehouse is a Non-Group Warehouse, i.e. cannot contain other Warehouses under it, this button will make this a Group Warehouse.
+<br>
+
+**Date: 17-May-2022**
+
+## Stock and Asset module in ERPNext
+
+Sir assigned us (Me, Jaspreet) to explore about Stock and Asset Module. 
+
+Stock, Buying and Accounting modules are inter linked with each other. It is so complex. We are trying to understand terms like General Ledger, Journal Entry, Purchase Receipt, Depreciation Ledger, Fixed Asset Register etc. 
 <br>
