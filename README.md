@@ -1482,3 +1482,17 @@ The Stock or Inventory module in ERPNext helps us to:
 - Provide valuation of each product. 
     
 The Stock module is tightly integrated with Purchase, Manufacturing and Accounting modules. Businesses have a large part of their financial resources invested in the stock items they trade. With ERP, we can always keep a bird's eye view on our stock availability, replenishment, procurement, sales, and much more.
+<br>
+
+**Date: 13-May-2022**
+
+## Core Stock Transactions
+
+There are three main types of entries:
+
+- Purchase Receipt: Items received from Suppliers against Purchase Orders. 
+- Stock Entry: Items transferred from one Warehouse to another. 
+- Delivery Note: Items shipped to Customers. 
+
+Apart from these core transactions, there are other documents available in ERPNext Stock module to manage Stock Reconciliation, Item Prices, deliveries, serial numbers, batch numbers, quality inspections, returns, etc.
+<br>
