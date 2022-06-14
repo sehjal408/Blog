@@ -1761,7 +1761,7 @@ When you move from a legacy system to ERPNext, you will have to add details of a
 - Now select warehouse and item. Now we can see the current item quantity in this warehouse.
 - We can also view the Stock Balance report by clicking on 'Stock Balance Report' . It will redirect to the report with the Item and Warehouse filters populated.
 
-**Stock Ledger Report **
+**Stock Ledger Report**
 
 A Stock Ledger Report is a detailed record that keeps track of stock movements for a company. It reflects the quantity and value of stock issued, received, or transferred along with the stock item and its warehouse details. Following are Stock Ledger Report Attributes:
 
@@ -1781,4 +1781,15 @@ This report list item wise - warehouse wise stock level of an item considering a
 5. Reserved Qty: Quantity ordered for sale, but not delivered. 
 6. Project Qty: Project Quantity is calculated as 
 Projected Qty = Actual Qty + Planned Qty + Requested Qty + Ordered Qty - Reserved Qty
+<br>
+
+**Date: 31-May-2022**
+
+## Desk Theme
+
+- Sir assigned us (Me and Jaspreet) the task to beautify the desk view with bootstrap. So we are exploring about it.
+- We found theme of desk. We install a theme from this url: https://github.com/hashirluv/r 
+- After installing this theme, colour of heading, navigation bar etc got changed.
+- Then we tried some other themes also. We tried White Theme, Blue Theme etc.
+- Then we understand the code and css files to change the view of desk. We can change only background colours, text colours, hover text colour etc with some changes in the css files. 
 <br>
