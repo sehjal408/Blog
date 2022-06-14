@@ -1612,3 +1612,25 @@ To buy an item, we have to create a "Material Request" with the purpose "Purchas
 
 We can create it manually or through re-order item in items i.e. If item quantity goes below the re-order level of item then material request will be created automatically.
 <br>
+
+**Date: 23-May-2022**
+
+## Request for Quotation and Supplier Quotation 
+
+**Request for Quotation **
+
+- A Request for Quotation is a document that an organization sends to one or more suppliers asking a quotation for items.
+- We can create Request for Quotation after Material Request. 
+- Go to Material Request, click on Create then Request for Quotation.
+- Enter the date and choose the Supplier to whom the Request for Quotation is to be sent.
+- In the next table, enter items, quantity and the target warehouse.
+- Save and Submit.
+
+**Supplier Quotation**
+
+- A Supplier Quotation is document by a potential supplier specifying the cost of goods or services they'll provide within a specified period.
+- A Supplier Quotation may also contain terms of sale, terms of payment, and warranties. Acceptance of quotation by the buyer can be considered as an agreement binding on both parties.
+- After creating Request for Quotation, An email with Supplier Quotation link will be sent to suppliers. 
+- From this link, Suppliers can submit their quotations. 
+- Then these quotations will be visible to us in the "Supplier Quotation" list.
+<br>
