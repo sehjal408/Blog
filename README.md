@@ -1697,3 +1697,16 @@ Assets can be an existing asset which has been bought earlier and it can be a ne
 For new assets, we cannot create the asset record directly from the Asset form. We need to create a Purchase Receipt/Invoice for it.
 Before creating an asset we need to create an item with 'is fixed asset' and create a purchase receipt against that item.
 <br>
+
+**Date: 27-May-2022**
+
+## Asset Reports
+
+**Asset Depreciation Ledger**
+
+This report shows the Purchase Amount, Depreciated Amount and accumulated total depreciation for all the assets under the selected date range. It also shows the current value and current depreciation status of the Asset.
+
+**Fixed Asset Register**
+
+Fixed asset register provides a unified view of all the details regarding current status of an asset. A Fixed asset register tracks all the fixed assets that the you have created. This not only includes assets that are currently in your possession, but also tracks those assets that are disposed.
+<br>
