@@ -1496,3 +1496,29 @@ There are three main types of entries:
 
 Apart from these core transactions, there are other documents available in ERPNext Stock module to manage Stock Reconciliation, Item Prices, deliveries, serial numbers, batch numbers, quality inspections, returns, etc.
 <br>
+
+**Date: 14-May-2022**
+
+## Item and Item Group for Stock
+
+First of all, Create Item Groups, Items, Warehouses, Suppliers etc.
+
+**Item Group:**
+
+An Item Group is a way to classify items based on types. Following are steps to create item group:
+
+1. Go to the Item Group list, click on New. 
+2. Select a group node under which you wish to create the Item Group, the default root is 'All Item Groups'. 
+3. Select 'Add Child' or click on the New button. 
+4. To make this child a category/group node, tick on Group Node. 
+5. Click on Create New. 
+
+**Item:**
+
+An Item is a product or a service offered by the company. Following are the steps to create items:
+
+1. Go to Stock -> Item. 
+2. Click on Add Item. 
+3. Keep the “Maintain Stock” field checked. 
+4. Save (After saving, Stock Entry, Stock Ledger, Accounting Ledger will be created automatically.) 
+<br>
