@@ -1711,6 +1711,7 @@ This report shows the Purchase Amount, Depreciated Amount and accumulated total 
 
 Fixed asset register provides a unified view of all the details regarding current status of an asset. A Fixed asset register tracks all the fixed assets that the you have created. This not only includes assets that are currently in your possession, but also tracks those assets that are disposed.
 <br>
+<br>
 
 **Date: 28-May-2022**
 
@@ -1747,4 +1748,37 @@ When you move from a legacy system to ERPNext, you will have to add details of a
 - Available-for-use Date 
 - Opening Accumulated Depreciation: The accumulated depreciation amount which has already been booked for an existing asset. 
 - Number of Depreciations Booked: Number of depreciation entries already booked. 
+<br>
+
+**Date: 30-May-2022**
+
+## Stock Reports
+
+**Quick Stock Balance**
+
+- Quick Stock Balance is a tool that can be used to quickly retrieve the current stock balance (quantity) and value of an item, in the specified warehouse, on the specified date.
+- To access, go to Stock > Tool > Quick Stock Balance.
+- Now select warehouse and item. Now we can see the current item quantity in this warehouse.
+- We can also view the Stock Balance report by clicking on 'Stock Balance Report' . It will redirect to the report with the Item and Warehouse filters populated.
+
+**Stock Ledger Report **
+
+A Stock Ledger Report is a detailed record that keeps track of stock movements for a company. It reflects the quantity and value of stock issued, received, or transferred along with the stock item and its warehouse details. Following are Stock Ledger Report Attributes:
+
+- Incoming Rate: It reflects the actual value of the stock at which it was brought under your inventory. It reflects the same value as entered in the Rate field of the document.
+- Balance Value: It represents the total value of the remainder stock in the inventory. It is the product of Valuation Rate and Balance Quantity of a stock item.
+- Valuation Rate: It is calculated based upon the valuation method selected.
+
+**Stock Projected Quantity Report**
+
+To access this report, go to Stock > Main Report > Stock Projected Quantity
+This report list item wise - warehouse wise stock level of an item considering all the stock transactions. With Actual Quantity of an item, it also provide other details like:
+
+1. Actual Qty: Quantity available in the warehouse. 
+2. Planned Qty: Quantity, for which, Work Order has been raised, but is pending to be manufactured. 
+3. Requested Qty: Quantity requested for purchase, but not ordered. 
+4. Ordered Qty: Quantity ordered for purchase, but not received. 
+5. Reserved Qty: Quantity ordered for sale, but not delivered. 
+6. Project Qty: Project Quantity is calculated as 
+Projected Qty = Actual Qty + Planned Qty + Requested Qty + Ordered Qty - Reserved Qty
 <br>
