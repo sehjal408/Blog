@@ -1587,6 +1587,7 @@ Steps for creating Stock Reconciliation:
 
 If the item is serialized/batched then add an entry in “Stock Entry”. Here we have to define serial number for all the items.
 <br>
+<br>
 
 **Date: 21-May-2022**
 
@@ -1605,6 +1606,7 @@ A Stock Entry lets you record Item movement between Warehouses. Steps for creati
 After adding an entry in Stock Reconciliation or Stock Entry, the item with specified quantity will be added in stock. You can check it in the Stock Ledger Report.
 
 **Material Request**
+
 A Material Request is a simple document identifying a requirement of a set of Items (products or services) for a particular reason.
 To buy an item, we have to create a "Material Request" with the purpose "Purchase". Here we have to set the quantity of required items and warehouse for which they are required.
 
