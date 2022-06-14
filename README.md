@@ -1612,6 +1612,7 @@ To buy an item, we have to create a "Material Request" with the purpose "Purchas
 
 We can create it manually or through re-order item in items i.e. If item quantity goes below the re-order level of item then material request will be created automatically.
 <br>
+<br>
 
 **Date: 23-May-2022**
 
@@ -1633,4 +1634,26 @@ We can create it manually or through re-order item in items i.e. If item quantit
 - After creating Request for Quotation, An email with Supplier Quotation link will be sent to suppliers. 
 - From this link, Suppliers can submit their quotations. 
 - Then these quotations will be visible to us in the "Supplier Quotation" list.
+<br>
+
+**Date: 24-May-2022**
+
+## Purchase Order and Purchase Receipt
+
+**Purchase Order**
+
+- A Purchase Order is a binding contract with your Supplier that you promise to buy a set of items under given conditions.
+- From Supplier Quotation, click on create then Purchase Order.
+- Select required by date.
+- Set taxes.
+- Set Target Warehouse: Optionally, you can set the default target Warehouse where the purchased Items will be delivered. This will be fetched into the Item table rows.
+- Save and submit.
+
+**Purchase Receipt**
+
+- Purchase Receipts are made when you accept Items from your Supplier usually against a Purchase Order.
+- We can create Purchase Receipt from the Purchase Order.
+- In the Purchase Order, click on Create > Purchase Receipt.
+- Enter the required data and submit it.
+- After creation of Purchase Receipt, Items will be added in the warehouses. You can check the item's entry in the Stockh Ledger Report.
 <br>
