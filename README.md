@@ -1550,3 +1550,20 @@ Sir assigned us (Me, Jaspreet) to explore about Stock and Asset Module.
 
 Stock, Buying and Accounting modules are inter linked with each other. It is so complex. We are trying to understand terms like General Ledger, Journal Entry, Purchase Receipt, Depreciation Ledger, Fixed Asset Register etc. 
 <br>
+
+**Date: 18-May-2022**
+
+## Supplier for Stock
+
+Suppliers are companies or individuals who provide you with products or services.
+
+1. Go to the Supplier list and click on New. 
+2. Enter a name for the supplier. 
+3. Select the supplier group. 
+4. Save. 
+5. Create New Address and New Contact. 
+6. In New Contact, if the supplier is already a user of erp then select the user id otherwise enter email id in contact details. 
+7. Then click on “Invite as User” then email will be sent to this email to set up the password. 
+8. Supplier will become a user now. 
+<br>
+
