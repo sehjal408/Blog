@@ -1681,3 +1681,19 @@ We can create it manually or through re-order item in items i.e. If item quantit
 - Click on Save -> Submit.
 - After paying, Invoice status will be changed to "Paid" and also now this invoice will not be available in the Account Payable Report.
 <br>
+
+**Date: 26-May-2022**
+
+## Asset Module
+
+**Asset:**
+
+In ERPNext, We can maintain fixed asset records for Company assets like computers, furniture, cars, etc. and manage their depreciations, sale. It is any valuable item owned by a company.
+Asset category: Asset Category based on the type of assets. For example, all desktops and laptops can be part of an Asset Category named 'Electronic Equipments'.
+
+**Types of assets:**
+
+Assets can be an existing asset which has been bought earlier and it can be a newly purchased item.
+For new assets, we cannot create the asset record directly from the Asset form. We need to create a Purchase Receipt/Invoice for it.
+Before creating an asset we need to create an item with 'is fixed asset' and create a purchase receipt against that item.
+<br>
