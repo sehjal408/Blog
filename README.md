@@ -1550,6 +1550,7 @@ Sir assigned us (Me, Jaspreet) to explore about Stock and Asset Module.
 
 Stock, Buying and Accounting modules are inter linked with each other. It is so complex. We are trying to understand terms like General Ledger, Journal Entry, Purchase Receipt, Depreciation Ledger, Fixed Asset Register etc. 
 <br>
+<br>
 
 **Date: 18-May-2022**
 
@@ -1567,3 +1568,22 @@ Suppliers are companies or individuals who provide you with products or services
 8. Supplier will become a user now. 
 <br>
 
+**Date: 19-May-2022**
+
+## Stock Reconciliation
+
+Stock Reconciliation is the process of counting and evaluating material/products, periodically at the year end. The Stock Reconciliation feature is used for:
+- Posting opening stock 
+- Reconciling book and actual stock 
+
+If the item is non serialized/non batched or the item is serialized and Serial Number Series is defined for a particular item, then add an entry in “Stock Reconciliation”.
+
+Steps for creating Stock Reconciliation:
+
+1. First, Go to Stock > Stock Reconciliation and click on “Add Stock Reconciliation”. 
+2. Select the “Purpose” as “Opening Stock”. 
+3. Enter all required data like Items, Warehouses, Quantity of Items etc. 
+4. Save. 
+
+If the item is serialized/batched then add an entry in “Stock Entry”. Here we have to define serial number for all the items.
+<br>
