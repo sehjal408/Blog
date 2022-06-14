@@ -1711,3 +1711,40 @@ This report shows the Purchase Amount, Depreciated Amount and accumulated total 
 
 Fixed asset register provides a unified view of all the details regarding current status of an asset. A Fixed asset register tracks all the fixed assets that the you have created. This not only includes assets that are currently in your possession, but also tracks those assets that are disposed.
 <br>
+
+**Date: 28-May-2022**
+
+## Create Asset
+
+An Item representing the asset should be created. The 'Maintain Stock' should be unchecked and 'Is Fixed Asset' must be checked.
+
+**1. Auto creation of assets**
+
+You can configure ERPNext to automatically create assets on submission of Purchase Receipt by enabling 'Auto Create Assets on Purchase' in Item. If you have enabled auto asset creation for the item representing an asset, you will have to provide the asset location while submitting the Purchase Receipt. A message confirming the creation of assets is displayed on submission of Purchase Receipt.
+
+**2. Manual creation of assets**
+
+If you would like to create assets manually, create an Item with 'Is Fixed Asset' enabled and leave 'Auto Create Assets on Purchase' unchecked . On submission of a Purchase Receipt/Purchase Invoice with that Item a message is shown indicating that you need to create assets manually.
+
+Follow below steps to create assets manually.
+
+1. Go to the Assets list, click on New. 
+2. Enter a name for the asset. 
+3. Select the Item Code. Item Name and Asset Category will be fetched automatically. 
+4. Select the Asset Owner, i.e. Company, Supplier, or Customer. 
+5. Select the Company/Supplier/Customer. 
+6. Select the Purchase Receipt/Purchase Invoice. Purchase Date and Gross Purchase Amount will be fetched automatically. 
+7. Select a Location. Eg: Mumbai Office. This will be fetched automatically if specified in Purchase Receipt items table 
+8. Set Available-for-use Date. The depreciation will be calculated starting from this date. 
+9. Save and Submit. Please note you need create one asset record for each asset you have bought. If you have bought five computers and have created just one Purchase Receipt with quantity set to five then you will have to create five asset records manually. 
+
+**3. Importing existing assets**
+
+When you move from a legacy system to ERPNext, you will have to add details of all the assets your company has purchased previously along with depreciation details of each asset. For an existing asset, you can create the asset record directly by checking "Is Existing Asset" checkbox and provide below details.
+
+- Gross Purchase Amount 
+- Purchase Date 
+- Available-for-use Date 
+- Opening Accumulated Depreciation: The accumulated depreciation amount which has already been booked for an existing asset. 
+- Number of Depreciations Booked: Number of depreciation entries already booked. 
+<br>
