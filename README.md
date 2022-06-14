@@ -1657,3 +1657,27 @@ We can create it manually or through re-order item in items i.e. If item quantit
 - Enter the required data and submit it.
 - After creation of Purchase Receipt, Items will be added in the warehouses. You can check the item's entry in the Stockh Ledger Report.
 <br>
+
+**Date: 25-May-2022**
+
+## Purchase Invoice and Payment
+
+**Purchase Invoice**
+
+- A Purchase Invoice is a bill you receive from your Suppliers against which you need to make the payment.
+- A Purchase Invoice is usually created from a Purchase Order or a Purchase Receipt. 
+- The Supplier's Item details will be fetched into the Purchase Invoice. However, you can also create a Purchase Invoice directly.
+- Set the Due Date for payment.
+- Save and Submit.
+- You can check Invoice Amount, Outstanding Amount, Paid amount etc. in "Account Payable"
+
+**Payment:**
+
+- A Payment Entry is a record indicating that payment has been made for an invoice.
+- Payment Entry can be made against the Sales Invoice, Purchase Invoice, Sales Order (Advance Payment), Purchase Order (Advance Payment), Expense Claim, Internal Transfer.
+- A Payment Entry can be created against the Purchase Invoice. 
+- In Purchase Invoice, click on create then Payment.
+- Choose the Mode of Payment and fill the required fields.
+- Click on Save -> Submit.
+- After paying, Invoice status will be changed to "Paid" and also now this invoice will not be available in the Account Payable Report.
+<br>
