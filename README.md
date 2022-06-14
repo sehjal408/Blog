@@ -1697,6 +1697,7 @@ Assets can be an existing asset which has been bought earlier and it can be a ne
 For new assets, we cannot create the asset record directly from the Asset form. We need to create a Purchase Receipt/Invoice for it.
 Before creating an asset we need to create an item with 'is fixed asset' and create a purchase receipt against that item.
 <br>
+<br>
 
 **Date: 27-May-2022**
 
