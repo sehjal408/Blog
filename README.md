@@ -1897,3 +1897,11 @@ a{text-decoration: none;}
 </html>
 ```
 <br>
+
+**Date: 2-June-2022**
+
+## Compare Student Record with new data 
+
+Today, I compare students record with the new data provided by NSPS.
+I have to add new students in the system etc. 
+<br>
