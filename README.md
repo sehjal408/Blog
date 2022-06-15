@@ -1905,3 +1905,15 @@ a{text-decoration: none;}
 Today, I compare students record with the new data provided by NSPS.
 I have to add new students in the system etc. 
 <br>
+
+**Date: 4-June-2022**
+
+## Active and Deactive Students
+
+- We can check all active students and deactive students in the system. 
+- Deactive students are those who have not paid their fees after a particular date.
+- We can check all active/deactive students from student list.
+- Go to student list. Add a filter with “Enabled” equals “Yes” in the student list. Count of all active students will show there.
+- To check Deactive students, change value of Enable to No. Then all deactive students will be visible.
+- We can also check Gender wise Active or Deactive students by applying Gender equals Female or Male filter.
+<br>
