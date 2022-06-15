@@ -1905,6 +1905,7 @@ a{text-decoration: none;}
 Today, I compare students record with the new data provided by NSPS.
 I have to add new students in the system etc. 
 <br>
+<br>
 
 **Date: 4-June-2022**
 
@@ -1916,4 +1917,15 @@ I have to add new students in the system etc.
 - Go to student list. Add a filter with “Enabled” equals “Yes” in the student list. Count of all active students will show there.
 - To check Deactive students, change value of Enable to No. Then all deactive students will be visible.
 - We can also check Gender wise Active or Deactive students by applying Gender equals Female or Male filter.
+<br>
+
+**Date: 6-June-2022**
+
+## Class and Section wise Active/Deactive Students
+
+- There is no Program field in the student doctype.
+- So we have to customize the doctype and add a new field Program and link it to the Program DocType.
+- After this, we can check count of active or deactive students class-wise and section-wise.
+- For class-wise, add a filter of program for example Program like Class 8.
+- For section-wise, add a filter of program. For example Program equals Class 8 A. 
 <br>
