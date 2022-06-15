@@ -1793,3 +1793,107 @@ Projected Qty = Actual Qty + Planned Qty + Requested Qty + Ordered Qty - Reserve
 - Then we tried some other themes also. We tried White Theme, Blue Theme etc.
 - Then we understand the code and css files to change the view of desk. We can change only background colours, text colours, hover text colour etc with some changes in the css files. 
 <br>
+
+**Date: 1-June-2022**
+
+## Dashboard for ERPGURU
+
+- Now we (I and Jaspreet) have to create a new dashboard page according to the rquirement specified by sir.
+- There should be links of Student, Program, Fee, Attendance etc. After clicking, it would ask for login. 
+- So we explored about this and create a new webpage. (Go to Website > Webpage then create new webpage)
+- Enter Title, Route etc. Select HTML in Content Type.
+- Enter the following code in html:
+
+```html
+<!DOCTYPE html>
+<html>
+<head>
+<title>Dashboard</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+html,body,h1,h2,h3,h4,h5 {font-family: "Raleway", sans-serif}
+a{text-decoration: none;}
+</style>
+</head>
+<body class="w3-light-grey">
+
+
+
+<!-- !PAGE CONTENT! -->
+<div class="w3-main" style="margin-left:300px;margin-top:100px;">
+
+<!-- Header -->
+<header class="w3-container" style="padding-top:24px">
+<h2><b><i class="fa fa-dashboard "></i> My Dashboard</b></h2>
+</header>
+
+<div class="w3-row-padding w3-margin-bottom">
+<div class="w3-quarter">
+<div class="w3-container w3-red w3-padding-24">
+<div class="w3-left"><i class="fa fa-book w3-xxxlarge"></i></div>
+<a href="http://gne11.gndec.ac.in/app/program">
+<div class="w3-clear"></div>
+<h4>Programs</h4>
+</a></div>
+</div>
+
+<div class="w3-quarter">
+<div class="w3-container w3-blue w3-padding-24">
+<div class="w3-left"><i class="fa fa-edit w3-xxxlarge"></i></div>
+<a href="http://gne11.gndec.ac.in/app/student-attendance-tool">
+<div class="w3-clear"></div>
+<h4>Mark attendence</h4>
+</div></a>
+</div>
+<div class="w3-quarter">
+<div class="w3-container w3-green w3-padding-24">
+<div class="w3-left"><i class="fa fa-check-square-o w3-xxxlarge"></i></div>
+<a href="http://gne11.gndec.ac.in/app/assessment-result">
+<div class="w3-clear"></div>
+<h4>Assessment </h4>
+</a>
+</div> </div> </div>
+<div class="w3-row-padding w3-margin-bottom">
+<div class="w3-quarter">
+<div class="w3-container w3-green w3-padding-24">
+<div class="w3-left"><i class="fa fa-bank w3-xxxlarge"></i></div>
+<div class="w3-right">
+</div>
+<a href="http://gne11.gndec.ac.in/app/fees">
+<div class="w3-clear"></div>
+<h4>Fee Module </h4>
+</div></a>
+</div>
+<div class="w3-quarter">
+<div class="w3-container w3-red w3-padding-24">
+<div class="w3-left"><i class="fa fa-users w3-xxxlarge"></i></div>
+<div class="w3-right">
+</div>
+<a href="http://gne11.gndec.ac.in/app/hr">
+<div class="w3-clear"></div>
+<h4>HR Module </h4>
+</div></a>
+</div>
+<div class="w3-quarter">
+<div class="w3-container w3-blue w3-padding-24">
+<div class="w3-left"><i class="fa fa-user-circle-o w3-xxxlarge"></i></div>
+<div class="w3-right">
+</div>
+<a href="http://gne11.gndec.ac.in/app/student">
+<div class="w3-clear"></div>
+<h4>Students</h4>
+</div></a>
+</div>
+</div>
+</div>
+
+
+</body>
+</html>
+```
+<br>
