@@ -49,7 +49,7 @@ A CGI script is any program that runs on a web server. CGI stands for Common Gat
 
 ## Introduction to Frappe
 
-Frappe, pronounced fra-pay, is a full stack, batteries-included, web framework written in Python and Javascript with MariaDB as the database. It is the framework which powers erpnext, is pretty generic and can be used to build database driven apps.
+Frappe, pronounced fra-pay, is a full stack, batteries-included, web framework written in Python and Javascript with MariaDB as the database. It is the framework which powers erpnextcf, is pretty generic and can be used to build database driven apps.
 
 The key difference in Frappe compared to other frameworks is that meta-data is also treated as data. This enables you to build front-ends very easily. We believe in a monolithic architecture, so Frappe comes with almost everything you need to build a modern web application. It has a full featured Admin UI called the Desk that handles forms, navigation, lists, menus, permissions, file attachment and much more out of the box.
 <br>
@@ -414,41 +414,6 @@ It is a no-code or low-code platform that eliminates all the extra repetition by
 <br>
 <br>
 
-**Date: 19-Feb-2022**
-
-## ERPNext Installation
-
-ERPNext is a free and open-source integrated Enterprise Resource Planning software developed by Frappe Technologies Pvt. Ltd. and is built on MariaDB database system using Frappe, a Python based server-side framework. ERPNext is a generic ERP software used by manufacturers, distributors and services companies.
-
-To install ERPNext, first we have to install frappe in our system. 
-After installing frappe, create a fresh site with the command: 
-
-`bench new-site site_name`
-
-This site will create new database so we have to give MySql Password here.
-
-Then install app in the system with the following command:
-
-`bench get-app erpnext --branch version-13`
-
-OR
-
-`bench get-app https://github.com/frappe/erpnext --branch version-13`
-
-With this, ERPNext version 13 will visible in apps folder of frappe directory.
-
-After creating site successfully, install the ERPNext on this site.
-Use the following command:
-
-`bench --site site_name install-app erpnext`
-`bench start`
-
-
-Now complete the setup wizard. Select your Region, Create first user etc.
-There will be many domains like Distribution, Retail, Education, Services, Agriculture, Healthcare etc. We have to work with Education so select only “Education” domain and continue the process. Then provide a company name and abbreviation. On the last screen, ERPNext will ask you what your company does, its bank name, the type of charts of accounts, and the fiscal year period. Fill the details and complete setup.
-<br>
-<br>
-
 **Date: 21-Feb-2022**
 
 ## Introduction to TMUX and MOSH
@@ -468,27 +433,17 @@ Today we got to know two new tools which are really very helpful for the coders 
 - Learning Syntax of Markdown Language in GitHub. 
 <br>
 
-**Date: 23-Feb-2022**
 
-## Comparison between ERPNext Version 12 and Version 13
-
-Install ERPNext Version 12 and 13. Then compare both the versions.
-The major difference is the UI interaction. In ERPNext 13 the UI design is very user friendly as compared to ERPNext 12 version,
-
-- In the 13 version , we have access to different themes well , this feature is not available in the 12 version. 
-- In ERPnext 12 version we have to manually set up the domains which is time consuming while on the other hand in 13 version it give us pre-processed domains with very clean UI which makes it simpler. 
-- In version 13 while setting up it automatically created a blog/webpage for the user and in version 12 this is missing or we can manually create it . 
-<br>
 
 **Date: 24-Feb-2022**
 
-## Education Domain in ERPNext
+## Education Domain in erpGuru
 
-Sir assigned the task to explore the Education Domain of ERPNext. So I am reading the documentation and trying to understand it and implementing it on my localhost. 
+Sir assigned the task to explore the Education Domain of erpGuru. So I am reading the documentation and trying to understand it and implementing it on my localhost. 
 
-The ERPNext Education Module helps to organizing your entire set-up. You can have your entire Student Database, Fee Structure, Staffing Information, Courses, Curriculum Which we used for the Project Nanakana Sahib Public School and Guru Nanak Dev Engineering College Ludhiana.
+The erpGuru Education Module helps to organizing your entire set-up. You can have your entire Student Database, Fee Structure, Staffing Information, Courses, Curriculum Which we used for the Project Nanakana Sahib Public School and Guru Nanak Dev Engineering College Ludhiana.
 
-Using Education module of ERPNext, you can effectively manage operations like:
+Using Education module of erpGuru, you can effectively manage operations like:
 - Managing Student 
 - Program and Courses 
 - Publishing Programs on the portal 
@@ -504,14 +459,14 @@ Using Education module of ERPNext, you can effectively manage operations like:
 
 ## Modules in Education Domain
 
-I am reading documentation of ERPNext Education Domain and understanding the concepts.
+I am reading documentation of erpGuru Education Domain and understanding the concepts.
 
 There are different modules under Education Domain. 
 
 - **Student:** There is record of all the students like student detail, guardian detail, student group, batch etc.
 - **Admission:** It keep track of admissions of students.
 - **Fees:** It keep track of fees, due date, pending fee etc of student.
-- **Learning Management System:** In this, the progress of individual students can be tracked through ERPNext as well as the portal.
+- **Learning Management System:** In this, the progress of individual students can be tracked through erpGuru as well as the portal.
 - **Attendance:** There is record of attendance of all the students. 
 - **Assessment:** It keep track of student progress, assessment result, schedule etc.
 - **HR:** It keeps record of all employees and instrutors of school or college.
@@ -520,7 +475,7 @@ There are different modules under Education Domain.
 
 **Date: 28-Feb-2022**
 
-## Setting Up ErpNext for School
+## Setting Up erpGuru for School
 
 First we setup the parent Company with all the details and under that parent company we setup our school which further related to courses, program, room, student category etc. then our team divided the work for different modules.
 
@@ -861,7 +816,7 @@ A Program will have an educational curriculum defined by your institute to strea
 
 ## Portal Settings for Program
 
-- **Is Published:** For every program created in ERPNext, there is a check-box in the Portal settings, that allows the Program to be published on the portal. This can facilitate Self Enrollment and other settings for the program. Once this box is checked, the following options will be available for the user.
+- **Is Published:** For every program created in erpGuru, there is a check-box in the Portal settings, that allows the Program to be published on the portal. This can facilitate Self Enrollment and other settings for the program. Once this box is checked, the following options will be available for the user.
 - **Allow Self Enroll:** Once this box is checked, the students/applicants would be able to enroll themselves for the program on the portal.
 - **Is Featured:** Enabling this option would allow the program to be featured on the portal.
 - **Intro Video:** Enter the link for the video that you wish to add an Introductory Video for the Program.
@@ -936,11 +891,11 @@ So being a part of a developer team one must need to Know Github in order to hav
 
 **Date: 24-March-2022**
 
-## Installing New ERPNext on server
+## Installing New erpGuru on server
 
-- First we install the new instance of frappe framework on the New Server then install erpnext with education domain. 
+- First we install the new instance of frappe framework on the New Server then install erpGuru with education domain. 
 - After this we are collecting students around 5000 and teachers (114) data from Nankana Sahib Public School. 
-- Arranging data according to doctype in erpnext. 
+- Arranging data according to doctype in erpGuru. 
 - Setting up the school. 
 <br>
 
@@ -949,10 +904,10 @@ So being a part of a developer team one must need to Know Github in order to hav
 ## Explore Company’s Default Values
 
 **Default Holiday List:**
-Holiday List is a list which contains the dates of holidays. Most organizations have a standard Holiday List for their employees. However, some of them may have different holiday lists based on different Locations or Departments. In ERPNext, you can configure multiple Holiday Lists and assign them to your employees based on your requirements.
+Holiday List is a list which contains the dates of holidays. Most organizations have a standard Holiday List for their employees. However, some of them may have different holiday lists based on different Locations or Departments. In erpGuru, you can configure multiple Holiday Lists and assign them to your employees based on your requirements.
 
 **Default Letter Head:**
-A Letter Head contains your organization's name, logo, address, etc which appears at the top portion in documents. Every company has a default Letter Head. These Letter Head values are generally set as Header and Footer in the documents. In ERPNext, you can capture these details in the Letter Head master.
+A Letter Head contains your organization's name, logo, address, etc which appears at the top portion in documents. Every company has a default Letter Head. These Letter Head values are generally set as Header and Footer in the documents. In erpGuru, you can capture these details in the Letter Head master.
 
 **Default Finance Book:**
 A Finance Book is a book against which all the accounting entries are booked. You can have multiple finance books. For example, one book for tax authorities and another for stockholders. This is useful if you have to report depreciation and other values in different ways based on regulatory requirements.
@@ -1474,7 +1429,7 @@ def example():
 
 ## Introduction to Stock 
 
-The Stock or Inventory module in ERPNext helps us to:
+The Stock or Inventory module in erpGuru helps us to:
 
 - Maintain details of your products and warehouses. 
 - Track receipt, transfer and delivery of the products. 
@@ -1494,7 +1449,7 @@ There are three main types of entries:
 - Stock Entry: Items transferred from one Warehouse to another. 
 - Delivery Note: Items shipped to Customers. 
 
-Apart from these core transactions, there are other documents available in ERPNext Stock module to manage Stock Reconciliation, Item Prices, deliveries, serial numbers, batch numbers, quality inspections, returns, etc.
+Apart from these core transactions, there are other documents available in erpGuru Stock module to manage Stock Reconciliation, Item Prices, deliveries, serial numbers, batch numbers, quality inspections, returns, etc.
 <br>
 <br>
 
@@ -1544,7 +1499,7 @@ We can set a default account for all transactions with this warehouse. After sav
 
 **Date: 17-May-2022**
 
-## Stock and Asset module in ERPNext
+## Stock and Asset module in erpGuru
 
 Sir assigned us (Me, Jaspreet) to explore about Stock and Asset Module. 
 
@@ -1688,7 +1643,7 @@ We can create it manually or through re-order item in items i.e. If item quantit
 
 **Asset:**
 
-In ERPNext, We can maintain fixed asset records for Company assets like computers, furniture, cars, etc. and manage their depreciations, sale. It is any valuable item owned by a company.
+In erpGuru, We can maintain fixed asset records for Company assets like computers, furniture, cars, etc. and manage their depreciations, sale. It is any valuable item owned by a company.
 Asset category: Asset Category based on the type of assets. For example, all desktops and laptops can be part of an Asset Category named 'Electronic Equipments'.
 
 **Types of assets:**
@@ -1721,7 +1676,7 @@ An Item representing the asset should be created. The 'Maintain Stock' should be
 
 **1. Auto creation of assets**
 
-You can configure ERPNext to automatically create assets on submission of Purchase Receipt by enabling 'Auto Create Assets on Purchase' in Item. If you have enabled auto asset creation for the item representing an asset, you will have to provide the asset location while submitting the Purchase Receipt. A message confirming the creation of assets is displayed on submission of Purchase Receipt.
+You can configure erpGuru to automatically create assets on submission of Purchase Receipt by enabling 'Auto Create Assets on Purchase' in Item. If you have enabled auto asset creation for the item representing an asset, you will have to provide the asset location while submitting the Purchase Receipt. A message confirming the creation of assets is displayed on submission of Purchase Receipt.
 
 **2. Manual creation of assets**
 
@@ -1741,7 +1696,7 @@ Follow below steps to create assets manually.
 
 **3. Importing existing assets**
 
-When you move from a legacy system to ERPNext, you will have to add details of all the assets your company has purchased previously along with depreciation details of each asset. For an existing asset, you can create the asset record directly by checking "Is Existing Asset" checkbox and provide below details.
+When you move from a legacy system to erpGuru, you will have to add details of all the assets your company has purchased previously along with depreciation details of each asset. For an existing asset, you can create the asset record directly by checking "Is Existing Asset" checkbox and provide below details.
 
 - Gross Purchase Amount 
 - Purchase Date 
